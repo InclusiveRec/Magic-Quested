@@ -1,0 +1,77 @@
+general:
+    debug:
+        errorLogging: true
+        level: 3
+        enableVolatileFeatures: true
+        enableProfiling: false
+        enabled: false
+    mana:
+        strManaPotionOnCooldown: You cannot use another mana potion yet.
+        manaPotionCooldown: 30
+        manaPotions:
+            - lapis_lazuli 100
+            - glowstone_dust 60
+            - redstone 30
+        enableManaBars: true
+    castitems:
+        cycleSpellsOnOffhandAction: false
+        ignoreCastItemDurability: []
+        onlyCycleToCastableSpells: true
+        alwaysShowMessageOnCycle: false
+        ignoreCastItemEnchants: true
+        ignoreCastItemNames: false
+        ignoreDefaultBindings: false
+        ignoreCastItemNameColors: false
+        allowCycleToNoSpell: false
+    strings:
+        spellChange: You are now using the %s spell.
+        onCooldown: That spell is on cooldown (%c seconds remaining).
+        entityNames: {}
+        cantBind: You cannot bind that spell to that item.
+        castUsage: 'Usage: /cast <spell>. Use /cast list to see a list of spells.'
+        consoleName: Admin
+        cantCast: You can't cast that spell right now.
+        wrongWorld: You cannot cast that spell here.
+        spellChangeEmpty: You are no longer using a spell.
+        unknownSpell: You do not know a spell with that name.
+        missingReagents: You do not have the required reagents for that spell.
+    chat:
+        broadcastRange: 20
+        textColor: 'DARK_AQUA'
+    display:
+        useExpBarAsCastTimeBar: true
+        soundFailOnCooldown: null
+        spellIconSlot: -1
+        soundFailMissingReagents: null
+        showStrCostOnMissingReagents: true
+    cooldown:
+        cooldownsPersistThroughReload: true
+        globalCooldown: 500
+    casting:
+        allowCastWithFist: false
+        castWithLeftClick: true
+        castWithRightClick: false
+    perms:
+        permissionDefault: 'FALSE'
+        ignoreGrantPermsFakeValue: true
+        ignoreCastPerms: false
+        opsIgnoreCastTimes: true
+        ignoreGrantPerms: false
+        opsHaveAllSpells: true
+        separatePlayerSpellsPerWorld: false
+        opsIgnoreReagents: true
+        opsIgnoreCooldowns: true
+        enableTempGrantPerms: true
+memory:
+    strings:
+        strMemory: You have used %memory memory out of %total.
+        outOfMemory: You don't have enough memory.
+    maxMemoryDefault: 100
+    maxMemory: {}
+magicxp:
+    strings:
+        expLearned: You have learned the %s spell!
+        header: ''
+        noXp: You have no MagicXP
+    autoLearn: false
+    schoolNames: {}

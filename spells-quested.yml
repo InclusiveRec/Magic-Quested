@@ -262,6 +262,6 @@ recall:
   str-no-mark: "You have no bed to return to."
   str-other-world: "You cannot recall to another world."
   str-too-far: "Your bed is too far away."
-  description:|
+  description: |
             &2Recall:  3 Memory spell
            "Teleports you to the last bed you slept in." 

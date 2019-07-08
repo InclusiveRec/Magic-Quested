@@ -82,8 +82,8 @@ forage:
     - melon 1 5%
     - egg 1 12%
   modifiers:
-    - Holding 359|&2Magic__Sickle power 2.5
-    - Biome FOREST,PLAINS,FOREST_HILLS,BIRCH_FOREST,BIRCH_FOREST_HILLS,ROOFED_FOREST,JUNGLE_HILLS,JUNGLE_EDGE required
+    - Holding shears|&2Magic__Sickle power 2.5 #FIXME
+    - Biome FOREST,PLAINS,BIRCH_FOREST,BIRCH_FOREST_HILLS,JUNGLE_HILLS,JUNGLE_EDGE required
     - ElevationAbove 62 required
   str-cost: "30 mana and 30 seeds."
   str-modifier-failed: "This is not good foraging terrain."

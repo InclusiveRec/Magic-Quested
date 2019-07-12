@@ -19,8 +19,9 @@ help:
 
   str-usage: "Usage: /cast help <spell>"
   str-no-spell: You do not know a spell by that name.
-  str-desc-line: "%s - %d"
-  str-cost-line: "Cost: %c"
+  str-format:
+    - "%s - %d"
+    - "Cost: %c"
 
 teach:
   spell-class: ".command.TeachSpell"
@@ -111,7 +112,7 @@ spellbook:
   destroy-when-used-up: false
   spellbook-block: bookshelf
 
-  str-use: "Usage: /cast spellbook <spell> [uses]"
+  str-usage: "Usage: /cast spellbook <spell> [uses]"
   str-cast-self: You have created a spellbook with the %s spell.
   str-no-spell: You do not know a spell by that name.
   str-cant-teach: You can't create a spellbook with that spell.

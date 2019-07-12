@@ -134,7 +134,7 @@ haste:
   duration: 60
   effect-strength: 2
   modifiers:
-    - Holding 280|&2Oak__wand power 2
+    - Holding stick|&2Oak__wand power 2 #FIXME Unused
   str-cast-others: "%a gains unnatural speed!"
   str-cast-self: "You gain unnatural speed!"
   str-cost: "20 mana and 2 sugar."
@@ -193,7 +193,7 @@ lifewalk:
   permission-name: arcana
   spell-class: ".buff.LifewalkSpell"
   cast-item: stick,forest_sickle
-  spell-icon: yellow_flower
+  spell-icon: dandelion
   xp-granted:
     - novice 1
   cost:

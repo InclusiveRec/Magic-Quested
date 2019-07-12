@@ -49,7 +49,7 @@ bloom:
     - arcana 10
   memory: 3
   quest:
-    - plant 300 wheat seeds
+    - variable meta_statistic_use_item_WHEAT_SEEDS 300
   cost:
     - mana 30
     - wheat_seeds 30
@@ -83,7 +83,13 @@ forage:
   cooldown: 0.5
   memory: 3
   quest:
-    - eat 30 of each - Apples, Beetroots, Carrots, Dried Kelp, Melon Slices, Potatos, Sweet Berries
+    - variable meta_statistic_use_item_APPLE 30
+    - variable meta_statistic_use_item_BEETROOT 30
+    - variable meta_statistic_use_item_CARROT 30
+    - variable meta_statistic_use_item_DRIED_KELP 30
+    - variable meta_statistic_use_item_MELON_SLICE 30
+    - variable meta_statistic_use_item_POTATO 30
+    - variable meta_statistic_use_item_SWEET_BERRIES 30
   calculate-drops-individually: false
   power-affects-quantity: true
   items:
@@ -122,7 +128,7 @@ gate:
     - recall 120
   memory: 3
   quest:
-    - Visit any 5 biomes
+    - Visit any 5 biomes #TODO
   bindable: false
   str-cost: "30 mana"
   str-cast-others: "%a appears!"
@@ -142,7 +148,7 @@ haste:
     - sugar 2
   memory: 2
   quest:
-    - Visit any 10 biomes
+    - Visit any 10 biomes #TODO
   boost-duration: 300
   duration: 60
   effect-strength: 2
@@ -214,7 +220,7 @@ lifewalk:
     - wheat_seeds 20
   memory: 2
   quest:
-    - Plant 200 saplings
+    - variable meta_statistic_use_item_OAK_SAPLING 200
   bindable: false
   use-cost:
     - mana 2
@@ -240,7 +246,8 @@ mark:
     - redstone 5
     - iron_ingot 5
   memory: 3
-  quest: Sleep in a bed
+  quest:
+    - variable meta_statistic_sleep_in_bed 1
   str-cost: 75 mana, 5 redstone dust and 5 iron bars
   str-cast-self: You have marked your location.
   description: |
@@ -261,7 +268,8 @@ recall:
     - novice 1
   cost:
     - mana 30
-  quest: Sleep in a bed
+  quest:
+    - variable meta_statistic_sleep_in_bed 1
   cooldown: 120
   shared-cooldowns:
     - summon 120

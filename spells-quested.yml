@@ -1,3 +1,16 @@
+predefined-items:
+  wand:
+    type: stick
+    name: Wand
+
+  forest_wand:
+    type: stick
+    name: Forest Wand
+
+  forest_sickle:
+    type: shears
+    name: Forest Sickle
+
 blink:
   spell-class: ".targeted.BlinkSpell"
   name: blink
@@ -82,7 +95,7 @@ forage:
     - melon 1 5%
     - egg 1 12%
   modifiers:
-    - Holding shears|&2Magic__Sickle power 2.5 #FIXME
+    - Holding forest_sickle power 2.5
     - Biome FOREST,PLAINS,BIRCH_FOREST,BIRCH_FOREST_HILLS,JUNGLE_HILLS,JUNGLE_EDGE required
     - ElevationAbove 62 required
   str-cost: "30 mana and 30 seeds."
@@ -134,7 +147,7 @@ haste:
   duration: 60
   effect-strength: 2
   modifiers:
-    - Holding stick|&2Oak__wand power 2 #FIXME Unused
+    - Holding wand power 2
   str-cast-others: "%a gains unnatural speed!"
   str-cast-self: "You gain unnatural speed!"
   str-cost: "20 mana and 2 sugar."

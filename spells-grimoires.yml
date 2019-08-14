@@ -1,0 +1,46 @@
+# Grimoires
+#Books required for cast item creation spells.
+
+
+predefined-items:
+
+flora_grimoire:
+        type: enchanted_book
+        name: "&2Herbology"
+        lore:
+            - "A compendium of druidic knowledge"
+            - "concerning the plants "
+            - "of the wilderness."
+
+
+
+
+# Grimoire creation spells
+
+
+lore_of_the_woods:
+    spell-class: ".instant.ConjureSpell"
+    cast-item: book
+    spell-icon: enchanted_book
+    xp-granted:
+        - apprentice 1
+    cost:
+        - book 1
+        - levels 30
+        - sapling 1
+        - flora_amalgam 12
+    memory: 5
+    quest:
+    - #TODO Create a book while in a forest biome after acquiring 5000 Novice MagicXP
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    items:
+      - flora_grimoire
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "30 levels, a book, a sapling, and 12 woodland amalgam."
+    description: |
+            &2Woodland Lore: 5 Memory Spell
+            Creates a woodland grimoire.

@@ -1,1 +1,249 @@
-### Novice spells are memory level up to 3, have no MagicXP requirement nor do they have a specific cast item ###
+### Novice spells are memory level up to 3, have no MagicXP requirement nor do they have a specific cast item TODO:Add link to rubric###
+
+bloom:
+  permission-name: novice
+  spell-class: ".targeted.FarmSpell"
+  always-granted: true
+  cast-item: stick
+  spell-icon: wheat_seeds
+  xp-granted:
+    - novice 1
+  memory: 3
+  quest:
+    - variable meta_statistic_use_item_WHEAT_SEEDS 300
+  cost:
+    - mana 30
+    - wheat_seeds 30
+  cooldown: 30
+  growth: 2
+  radius: 16
+  modifiers:
+    - Outside continue
+    - Day power 1.5
+  str-cost: "30 mana and 30 seeds."
+  str-on-cooldown: "patience child, patience"
+  description:
+    - "Greatly accelerates crop growth."
+  effects:
+    huzzah:
+      effect: Particles
+      position: special
+      particle: VILLAGER_HAPPY
+      offset: 0.5,0.75,0.5
+
+forage:
+  permission-name: novice
+  spell-class: ".instant.ConjureSpell"
+  cast-item: stick, forest_sickle
+  spell-icon: apple
+  xp-granted:
+    - novice 1
+  cost:
+    - mana 30
+    - wheat_seeds 30
+  cooldown: 0.5
+  memory: 3
+  quest:
+    - variable meta_statistic_use_item_APPLE 30
+    - variable meta_statistic_use_item_BEETROOT 30
+    - variable meta_statistic_use_item_CARROT 30
+    - variable meta_statistic_use_item_DRIED_KELP 30
+    - variable meta_statistic_use_item_MELON_SLICE 30
+    - variable meta_statistic_use_item_POTATO 30
+    - variable meta_statistic_use_item_SWEET_BERRIES 30
+  calculate-drops-individually: false
+  power-affects-quantity: true
+  items:
+    - wheat 1-6 30%
+    - apple 2-6 25%
+    - brown_mushroom 1-4 15%
+    - red_mushroom 1-2 7%
+    - pumpkin 1 6%
+    - melon 1 5%
+    - egg 1 12%
+  modifiers:
+    - Holding forest_sickle power 2.5
+    - Biome FOREST,PLAINS,BIRCH_FOREST,BIRCH_FOREST_HILLS,JUNGLE_HILLS,JUNGLE_EDGE required
+    - ElevationAbove 62 required
+  str-cost: "30 mana and 30 seeds."
+  str-modifier-failed: "This is not good foraging terrain."
+  str-on-cooldown: "Rummage..."
+  description: |
+    &2Forage: 3 Memory Spell
+    You discover sources of food in the wilderness.
+    This will only work in certain biomes, and not underground.
+
+gate:
+  permission-name: novice
+  spell-class: ".instant.GateSpell"
+  can-cast-by-command: true
+  cast-item: wand
+  spell-icon: filled_map
+  xp-granted:
+    - novice 1
+  cost:
+    - mana 30
+  cooldown: 120
+  shared-cooldowns:
+    - summon 120
+    - recall 120
+  memory: 3
+  quest:
+    - Visit any 5 biomes #TODO
+  bindable: false
+  str-cost: "30 mana"
+  str-cast-others: "%a appears!"
+  str-gate-failed: "Unable to teleport."
+  description:
+    - "Teleport to nearest settlement."
+
+haste:
+  permission-name: novice
+  spell-class: ".buff.HasteSpell"
+  cast-item: stick,forest_wand
+  spell-icon: gold_boots
+  xp-granted:
+    - novice 1
+  cost:
+    - mana 20
+    - sugar 2
+  memory: 2
+  quest:
+    - Visit any 10 biomes #TODO
+  boost-duration: 300
+  duration: 60
+  effect-strength: 2
+  modifiers:
+    - Holding wand power 2
+  str-cast-others: "%a gains unnatural speed!"
+  str-cast-self: "You gain unnatural speed!"
+  str-cost: "20 mana and 2 sugar."
+  str-fade: "You lose your unnatural speed."
+  description: |
+    &rHaste: 2 Memory Spell
+    Sprint faster for a time.
+  effects:
+    particles:
+      position: buff
+      effect: particles
+      effect-interval: 10
+      particle-name: explode
+      horiz-spread: 0.1
+      vert-spread: 0.8
+      force: 0.2
+      count: 12
+      y-offset: 0.5
+    castlisten:
+      position: caster
+      effect: sound
+      sound: "mob.wolf.panting"
+
+leap:
+  permission-name: novice
+  spell-class: ".instant.LeapSpell"
+  always-granted: true
+  cast-item: stick,wand
+  can-cast-by-command: true
+  spell-icon: diamond_boots
+  xp-granted:
+    - novice 1
+  cost:
+    - mana 30
+  cooldown: 1.8
+  memory: 3
+  cancel-damage: true
+  forward-velocity: 40
+  upward-velocity: 15
+  modifiers:
+    - Holding wand power 2
+    - Gliding denied
+    - BuffActive haste denied
+  str-cost: "30 mana."
+  str-cast-self: "You leap forward!"
+  str-cast-others: "%a leaps forward!"
+  str-on-cooldown: "You are tensing your muscles..."
+  description:
+    - "You leap forward."
+  effects:
+    boing:
+      effect: BlockBreak
+      id: "wool"
+
+lifewalk:
+  permission-name: novice
+  spell-class: ".buff.LifewalkSpell"
+  cast-item: stick,forest_sickle
+  spell-icon: dandelion
+  xp-granted:
+    - novice 1
+  cost:
+    - mana 20
+    - wheat_seeds 20
+  memory: 2
+  quest:
+    - variable meta_statistic_use_item_OAK_SAPLING 200
+  bindable: false
+  use-cost:
+    - mana 2
+    - wheat_seeds 2
+  use-cost-interval: 10
+  str-cost: "20 mana and 20 wheat seeds, plus 2 mana and 2 wheat seeds every 10 steps."
+  str-cast-self: "Flowers spring up in your footsteps."
+  str-fade: "Your steps no longer cause flowers to grow."
+  description: |
+    &2Lifewalk:  2 Memory spell
+    Flowers grow in your footsteps.
+
+mark:
+  permission-name: novice
+  spell-class: .instant.MarkSpell
+  name: mark
+  spell-icon: redbed
+  cooldown: 43200
+  permanent-marks: true
+  xp-granted:
+    - novice 1
+  cost:
+    - mana 75
+    - redstone 5
+    - iron_ingot 5
+  memory: 3
+  quest:
+    - variable meta_statistic_sleep_in_bed 1
+  str-cost: 75 mana, 5 redstone dust and 5 iron bars
+  str-cast-self: You have marked your location.
+  description: |
+    &2Mark:  3 Memory spell
+    Marks your location for later recall.
+
+recall:
+  permission-name: novice
+  spell-class: ".instant.RecallSpell"
+  always-granted: true
+  cast-item: wand
+  can-cast-by-command: true
+  allow-cross-world: false
+  spell-icon: red_bed
+  memory: 3
+  bindable: false
+  xp-granted:
+    - novice 1
+  cost:
+    - mana 30
+  quest:
+    - variable meta_statistic_sleep_in_bed 1
+  cooldown: 120
+  shared-cooldowns:
+    - summon 120
+    - gate 120
+  max-range: 1000
+  mark-spell: mark
+  str-cast-others: "%a disappears!"
+  str-cost: "30 mana"
+  str-cast-self: "You teleport back home."
+  str-no-mark: "You have no bed to return to."
+  str-other-world: "You cannot recall to another world."
+  str-too-far: "Your bed is too far away."
+  description: |
+    &2Recall:  3 Memory spell
+    "Teleports you to the last bed you slept in."

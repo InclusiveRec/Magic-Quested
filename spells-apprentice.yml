@@ -1,0 +1,32 @@
+# Apprentice spells are memory levels 4-6, require NoviceXP 1000x their memory level. 
+# Cast Item: either a stick (or command) or more powerfully with a specific cast item.
+
+
+blink:
+  permission-name: apprentice
+  spell-class: ".targeted.BlinkSpell"
+  name: blink
+  spell-icon: ender_pearl
+  description: Teleport a short distance.
+  cast-item: stick
+  memory: 4
+  cooldown: 4
+  range: 40
+  pass-through-ceiling: false
+  smoke-trail: true
+  effects:
+    1:
+      position: pos1
+      effect: EnderSignal
+    2:
+      position: pos2
+      effect: EnderSignal
+  cost:
+    - mana 40
+    - spider_eye 4
+  modifiers:
+    - MagicXpAbove novice:4000 required
+  str-cost: 40 mana and 4 spider_eye
+  str-cast-self: You blink away!
+  str-cast-others: "%a blinks away!"
+  str-cant-blink: You cannot blink there.

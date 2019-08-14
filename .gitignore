@@ -1,4 +1,5 @@
 vars/
 spellbooks/
 errors/
+report*
 cooldowns.txt

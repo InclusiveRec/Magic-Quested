@@ -1,0 +1,114 @@
+# Wands
+# Cast items that are optional for Novice and Apprentice spells, required and non-bindable for master spells.
+
+
+predefined-items:
+
+forest_sickle:
+        type: shears
+        name: "&2Magic Sickle"
+        lore:
+            - "Woodland shamans and druids"
+            - "use enchanted sickles"
+            - "to prepare their spell"
+            - "components."
+        enchants:
+            - "durability 2"
+            - "damage_all 1"
+
+
+forest_sword:
+        name: "&2Hunting Knife"
+        type: iron_sword
+        enchants:
+         - "damage_all 1"
+         - "loot_bonus_mobs 2"
+         
+         
+forest_wand:
+        type: stick
+        name: "&2Oak_wand"
+        lore:
+            - "A branch cut from an oak tree, living,"
+            - "breathing with druidic magic."
+ 
+ 
+#Item creation spells
+
+
+gardener:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: forest_grimoire
+    spell-icon: shears
+    xp-granted:
+        - apprentice 1
+    cost:
+        - levels 5
+        - shears 1
+    memory: 5
+    quest:
+    - #TODO Create shears in a forest biome 5000 Novice MagicXP required
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    items:
+        - forest_sickle
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and a pair of shears"
+    description: |
+        &2Woodland Gardener: 5 Memory Spell
+        Creates herbalist's enchanted sickle.
+        Requires the &2woodland amalgam&3 spell.
+    effects:
+        sound:
+          position: caster
+          effect: sound
+          sound: ambient.cave.1
+          
+hunting_knife:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: forest_grimoire
+    xp-granted:
+        - apprentice 1
+    cost:
+        - iron_sword 1
+        - levels 5
+    memory: 5
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    items:
+        - forest_sword 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and an iron sword."
+    description: |
+            &2Hunting Knife: 5 Memory Spell.
+            Creates a fine tool for carving up one's prey...          
+ 
+woodland_wand:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: forest_grimoire
+    spell-icon: stick
+    xp-granted:
+        - apprentice 1
+    cost:
+        - levels 5
+        - "6:0 1" #TODO should be oak sapling
+    memory: 5
+    quest:
+    - #TODO Shear the leaves of an oak tree in a forest biome 5000 Novice MagicXP required
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    items:
+        - forest_wand
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and an oak sapling."  

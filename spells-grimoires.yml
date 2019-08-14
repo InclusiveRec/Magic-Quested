@@ -4,7 +4,14 @@
 
 predefined-items:
 
-flora_grimoire:
+    dragon_grimoire:
+        type: enchanted_book
+        name: "&5Dragon Grimoire"
+        lore: |
+            A detailed account
+            of every type of dragon.
+
+    flora_grimoire:
         type: enchanted_book
         name: "&2Herbology"
         lore:
@@ -17,7 +24,35 @@ flora_grimoire:
 
 # Grimoire creation spells
 
-
+lore_of_dragons:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: book
+    spell-icon: enchanted_book
+    xp-granted:
+        - apprentice 1 
+    cost:
+        - book 1
+        - levels 5
+        - popped_chorus_fruit 5
+        - dragon_breath 1
+    memory: 5
+    quest:
+    - #TODO Create a book in the end after acquiring 5000 Novice MagicXP
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    items:
+        - dragon_grimoire 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "A book, 5 levels, 5 popped chorus fruits, and a bottle of dragon's breath."
+    description: |
+            &5Lore of Dragons: 5 Memory Spell
+            Creates a Dragon grimoire.
+            
+            
 lore_of_the_woods:
     spell-class: ".instant.ConjureSpell"
     cast-item: book
@@ -26,9 +61,9 @@ lore_of_the_woods:
         - apprentice 1
     cost:
         - book 1
-        - levels 30
+        - levels 5
         - sapling 1
-        - flora_amalgam 12
+        - flora_amalgam 5
     memory: 5
     quest:
     - #TODO Create a book while in a forest biome after acquiring 5000 Novice MagicXP
@@ -40,7 +75,7 @@ lore_of_the_woods:
     modifiers:
         - magicxpabove novice:5000 required
     str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
-    str-cost: "30 levels, a book, a sapling, and 12 woodland amalgam."
+    str-cost: "5 levels, a book, a sapling, and 5 woodland amalgam."
     description: |
             &2Woodland Lore: 5 Memory Spell
             Creates a woodland grimoire.

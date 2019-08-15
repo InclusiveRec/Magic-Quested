@@ -4,6 +4,16 @@
 
 predefined-items:
 
+dragon_sphere:
+        type: compass   #TODO Please add enchanted look
+        name: "&5Scaled Compass"
+        lore:
+            - "Encrusted with dragon scales"
+            - "magic energy is channeled" 
+            - "through the compass needle"
+            - "and manifests in the form"
+            - "of transportation based magic"
+            
 forest_sickle:
         type: shears
         name: "&2Magic Sickle"
@@ -15,7 +25,6 @@ forest_sickle:
         enchants:
             - "durability 2"
             - "damage_all 1"
-
 
 forest_sword:
         name: "&2Hunting Knife"
@@ -35,6 +44,31 @@ forest_wand:
  
 #Item creation spells
 
+         
+dragon_compass:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: dragon_grimoire
+    xp-granted:
+        - apprentice 1
+    cost:
+        - compass 1
+        - levels 5
+    memory: 5
+    quest:
+    - #TODO Create a compass in the end 5000 Novice MagicXP required
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    items:
+        - dragon_sphere 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and a compass."
+    description: |
+            &2Scaled Compass: 5 Memory Spell.
+            Creates a magical compass for transportation.  
+    effects: #TODO Add whatever effects seem appropriate       
 
 gardener:
     permission-name: apprentice
@@ -78,6 +112,8 @@ hunting_knife:
         - iron_sword 1
         - levels 5
     memory: 5
+    quest:
+    - #TODO Create an iron sword in a forest biome 5000 Novice MagicXP required
     require-cast-item-on-command: true
     allow-command-casting: true
     items:
@@ -88,7 +124,8 @@ hunting_knife:
     str-cost: "5 levels and an iron sword."
     description: |
             &2Hunting Knife: 5 Memory Spell.
-            Creates a fine tool for carving up one's prey...          
+            Creates a fine tool for carving up one's prey...  
+    effects: #TODO Add whatever effects seem appropriate        
  
 woodland_wand:
     permission-name: apprentice
@@ -111,4 +148,8 @@ woodland_wand:
     modifiers:
         - magicxpabove novice:5000 required
     str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
-    str-cost: "5 levels and an oak sapling."  
+    str-cost: "5 levels and an oak sapling." 
+    description: |
+            &2Oak wand: 5 Memory Spell.
+            More effective than a mere stick could ever be.     
+    effects: #TODO Add whatever effects seem appropriate           

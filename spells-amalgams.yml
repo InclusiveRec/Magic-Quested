@@ -1,33 +1,232 @@
 # Amalgams
-# Custom spell components consumed by some master level spells.
+# Custom spell components consumed by some master level spells or spells with multiple affinities.
 
 predefined-items:
-  this_cannot_be_empty:
-    type: stick
 
+    fauna_amalgam:
+        type: brown_dye
+        name: "&2Animalia Amalgam"
+        lore:
+            - "Concoction"
+            - "created from the essence"
+            - "of creatures."
+  
+    flame_amalgam:
+         type: red_dye
+         name: "&4Fire Amalgam"
+         lore:
+            - "The Hottest Substance"
+            - "known"
+            - "Used to harness the power of the Center Core"
 
+    flora_amalgam:
+        type: green_dye
+        name: "&2Herbal Amalgam"
+        lore:
+            - "A mix of various"
+            - "wildflowers and"
+            - "woodland plants."
+
+    mortar:
+        name: "&8Mortar"
+        lore:
+          - "A wet, sticky mixture"
+          - "of dirt and clay"
+          - "used in masonry."
+        type: gray_dye
+
+    hydro_amalgam:
+         type: blue_dye
+         name: "&4Hydro Amalgam"
+         lore:
+             - "A whirl of"
+             - "magic from rivers"
+             - "and oceans."
+
+    sun_amalgam:
+        type: yellow_dye
+        name: "&eSolar Amalgam"
+        lore:
+            - "The elves combine sunflowers"
+            - "with a bar of gold"
+            - "to create this special mixture"
+  
+    storm_amalgam:
+        type: light_gray_dye
+        name: "&7Storm Amalgam"
+        lore:
+            - "The concentrated power"
+            - "of a storm is contained"
+            - "within this amalgam."
+
+########################            
 #Amalgam creation spells
 
 
+beastial_amalgam:
+    permission-name: novice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stick, forest_sickle
+    spell-icon: brown_dye
+    xp-granted:
+        - novice 1
+    cost:
+        - mana 10
+        - leather 1
+        - rabbit_hide 1          
+        - egg 1
+    memory: 1
+    quest:
+    - #TODO Collect an egg, leather, and rabbit hide 
+    items:
+      - fauna_amalgam 2
+    str-cost: "10 mana, an egg, leather, and rabbit hide."
+    description: |
+            &2Herbal Amalgam: 1 Memory Spell
+            Prepare a fauna amalgam.
+            
+botanical_amalgam:
+    permission-name: novice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stick, forest_sickle
+    spell-icon: green_dye
+    xp-granted:
+        - novice 1
+    cost:
+        - mana 10
+        - fern 1
+        - sugar_cane 1         
+        - seagrass 1
+    memory: 1
+    quest:
+    - #TODO Collect a fern, sugar cane, and seagrass
+    items:
+      - flora_amalgam 3
+    str-cost: "10 mana, a fern, sugar cane, and seagrass."
+    description: |
+            &2Herbal Amalgam: 1 Memory Spell
+            Prepare a flora amalgam.
+    
+fire_amalgam:
+    permission-name: novice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stick, fire_staff
+    spell-icon: red_dye
+    xp-granted:
+        - novice 1
+    memory: 1
+    quest:
+    - #TODO Collect netherrack and a bucket of lava
+    items:
+        - flame_amalgam 1
+        - bucket 1
+    cost:
+        - mana 10
+        - lava_bucket 1
+        - netherrack 1
+    modifiers:
+        - outside required
+    str-modifier-failed: "Stand under a clear sky to cast this spell."
+    str-cost: "Under a clear sky, mix netherrack and a bucket of lava."
+    description: |
+            &eFire Amalgam: 1 Memory Spell
+            Mixes some Flame Amalgam.
+               
+hydro_amalgam:
+    permission-name: novice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stick, water_rod
+    spell-icon: blue_dye
+    xp-granted:
+        - novice 1
+    cost:
+        - mana 10
+        - ice 1
+        - water_bucket 1
+    memory: 1
+    quest:
+    - #TODO Collect ice
+    items:
+        - hydro_amalgam 1
+        - bucket 1
+    str-cost: "Combine ice and a bucket of water."
+    description: |
+            &eHydro Amalgam: 1 Memory Spell
+            Mixes some Hydro Amalgam.
+ 
+mix_mortar:
+    permission-name: novice
+    spell-class: ".instant.ConjureSpell"
+    spell-icon: gray_dye
+    xp-granted:
+        - novice 1 
+    cast-item: stick, iron_trowel
+    cost:
+        - mana 10
+        - dirt 3
+        - clay 1
+        - water_bucket 2
+    cooldown: 1
+    memory: 1
+    quest:
+    - #TODO Collect dirt and clay
+    items:
+        - mortar 4
+        - bucket 2
+    modifiers:
+        - holding 256|&8Mason's_Trowel  
+        #TODO I'd like using the cast item to give 3 times as much mortar as using a stick
+    str-cost: "Mix 3 parts dirt with 1 part clay and 2 buckets of water."
+    str-on-cooldown: ""
+    description: |
+            &rMix Mortar  1 Memory Spell
+            &3Mixes mortar out of raw materials.
+           
+solar_amalgam:
+    permission-name: novice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stick, forest_sickle
+    spell-icon: yellow_dye
+    xp-granted:
+        - novice 1
+    memory: 1
+    quest:
+    - #TODO Collect a sunflower and gold nugget
+    cost:
+        - mana 10
+        - gold_nugget 1
+        - sunflower 1
+    items:
+        - sun_amalgam 2
+    str-cost: "Combine a sunflower and gold nugget."
+    description: |
+            &eSolar Amalgam: 1 Memory Solar Spell
+            Mixes a solar amalgam.       
 
-
-
-woodland_amalgam:
-  permission-name: apprentice
-  spell-class: ".instant.ConjureSpell"
-  cast-item: forest_sickle
-  spell-icon: cactus_green
-  xp-granted:
-    - apprentice 1
-  cost:
-    - mana 40
-    - brown_mushroom 1
-    - dandelion 1
-    - poppy 1
-  memory: 4
-  items:
-    - flora_amalgam 4 #TODO Connie
-  str-cost: "40 mana, 1 brown mushroom, 1 yellow flower, and 1 red flower."
-  description: |
-    &2Herbal Amalgam: 4 Memory Spell
-    Prepare a woodland amalgam.
+     
+storm_amalgam:
+    permission-name: novice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stormhammer, stick
+    spell-icon: light_gray_dye
+    xp-granted:
+        - novice 1 
+    memory: 1
+    quest:
+    - #TODO create a flint and steel
+    items:
+        - storm_amalgam 4-6
+        - bottle 1
+    cost:
+        - flint_and_steel 1
+        - potion 1
+        - mana 10
+    modifiers:
+        - outside required
+        - storm required
+    str-cost: "During a storm, electrify a bottle of water with a flint and steel."
+    str-modifier-failed: "You must be in a storm cast this spell."
+    description: |
+            &7Storm Amalgam: 1 Memory Storm Spell
+            Concentrates some storm amalgam.
+                      

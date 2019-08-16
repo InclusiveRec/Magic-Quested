@@ -7,37 +7,40 @@ predefined-items:
         type: "enchanted_book"
         name: "&5Necronomicon"
         lore:
-            - "Peruse this volume with care."
-            - "Reading just one page can"
-            - "rob a person of their senses,"
-            - "so dark are the secrets it contains."
+            - "Within these pages lie the secrets."
+            - "of reanimating the dead.  Take care"
+            - "in perusal.  The allure of undead"
+            - "has taken the sanity of many."
  
     dragon_grimoire:
         type: enchanted_book
-        name: "&5Dragon Grimoire"
-        lore: |
-            A detailed account
-            of every type of dragon.
+        name: "&5Lexica Draconica"
+        lore:
+            - "Records of the realm from a dragon's"
+            - "perspective.  The secrets of travel"
+            - "lay within these pages."
+            - ""
 
     fire_grimoire:
         type: "enchanted_book"
-        name: "&4Fiery Grimoire"
+        name: "&4Scorched Volume"
         lore:
-          - "A codex seared"
-          - "with the knowledge"
-          - "of fire."
+          - "At first glace, this book appears to be"
+          - "from the aftermath of a library fire."
+          - "Peering closer reveals writing within the"
+          - "scorched areas, revealing the true contents."
 
     flora_grimoire:
         type: enchanted_book
-        name: "&2Herbology"
+        name: "&2Herbology & Animalia"
         lore:
             - "A compendium of druidic knowledge"
-            - "concerning the plants "
+            - "concerning the flora and fauna"
             - "of the wilderness."
 
     hydro_grimoire:
         type: "enchanted_book"
-        name: "&1On Hydromancy"
+        name: "&1Waves of Knowledge"
         lore:
             - "A treatise on the magic"
             - "which flows through rivers"
@@ -46,7 +49,7 @@ predefined-items:
 
     knight_grimoire:
         type: "enchanted_book"
-        name: "&8Heraldric Manual"
+        name: "&8For Chivalry"
         lore:
             - "Details the rules, disciplines,"
             - "and orders of knighthood."
@@ -55,38 +58,39 @@ predefined-items:
 
     shadow_grimoire:
         type: enchanted_book
-        name: "&7Book of Shadows"
-        lore: |
-            Any and all shadows
-            are recorded in this
-            magical book.
+        name: "&7Negative Space"
+        lore:
+            - "For every glowing torch, there is a"
+            - "shadow cast by it.  Where there is light,"
+            - "darkness follows.  Read these pages in"
+            - "darkness and their secreted will appear."
 
     sun_grimoire:
         type: "enchanted_book"
-        name: "&eAlmanac"
+        name: "&eRays of Wisdom"
         lore:
-          - "Detailed observations"
-          - "of the movements of the sun"
-          - "and theories of how to"
-          - "harness its power."
+          - "Detailed observations of the movements"
+          - "of the sun.  There more to it that most"
+          - "mages expect. This tome contains theories"
+          - "to harness its power."
 
     stone_grimoire:
         type: "enchanted_book"
-        name: "&8Stone Tablet"
+        name: "&8Ancient Slate"
         lore:
-          - "The passage of time"
-          - "has etched into Stone"
-          - "the magical secrets"
-          - "found deep underground."
+          - "Ancients secrets of the earth and stone"
+          - "are engraved into this slate.  The slate"
+          - "is warm to the touch and appears to"
+          - "resonate with the surrounding ground."
 
     storm_grimoire:
         type: enchanted_book
-        name: "&9Book of Storms"
+        name: "&9Sky's Wrath"
         lore:
-          - "From the movement of clouds,"
-          - "to the stirrings which presage"
-          - "the breaking of great storms,"
-          - "this book is the guide."
+          - "The sky can be fickle with its emotions."
+          - "The cloud on the cover of this tome changes"
+          - "with the weather.  Maybe the clouds are"
+          - "communicating with something in these pages."
           
 #########################          
 #Grimoire creation spells

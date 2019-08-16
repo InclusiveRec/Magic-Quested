@@ -1,0 +1,463 @@
+# Wands
+# Non-bindable cast items that are optional for Novice and Apprentice spells, required for master spells.
+
+
+predefined-items:
+
+    death_wand:
+        type: bone #TODO Please add enchanted look if possible
+        name: "&5Carved bone"
+        lore:
+            - "A wand carved from a bone"
+            - "with eldritch sigils"
+            - "stained with the blood"
+            - "of sacrificial animals."
+
+    dragon_sphere:
+        type: compass   #TODO Please add enchanted look
+        name: "&5Scaled Compass"
+        lore:
+            - "Encrusted with dragon scales"
+            - "magic energy is channeled" 
+            - "through the compass needle"
+            - "and manifests in the form"
+            - "of transportation based magic"
+
+    fire_staff:
+        type: "blaze_rod"
+        name: "&4Rod of Pyromancy"
+        lore:
+          - "This wand is hot to the"
+          - "touch, and smokes and sparks"
+          - "with pyromantic magics."
+                      
+    forest_sickle:
+        type: shears
+        name: "&2Magic Sickle"
+        lore:
+            - "Woodland shamans and druids"
+            - "use enchanted sickles"
+            - "to prepare their spell"
+            - "components."
+        enchants:
+            - "durability 2"
+            - "damage_all 1"
+
+    forest_sword:
+        name: "&2Hunting Knife"
+        type: iron_sword
+        enchants:
+         - "damage_all 1"
+         - "loot_bonus_mobs 2"
+         
+         
+    forest_wand:    
+        type: stick    #TODO Please add enchanted look
+        name: "&2Oak_wand"
+        lore:
+            - "A branch cut from an oak tree, living,"
+            - "breathing with druidic magic."
+ 
+    iron_trowel:
+        name: "&8Mason's Trowel"
+        lore: 
+          - "An enchanted tool."
+        type: iron_shovel
+        enchants:
+          - "dig_speed 2"
+          - "durability 2"
+          - "silk_touch 1"
+
+    minepick:
+        type: iron_pickaxe
+        name: "&8Miner's Pick"
+        lore:
+          - "This pick carries"
+          - "a powerful enchantment"
+          - "of stone magic."
+        enchants:
+          - "dig_speed 5"
+          - "durability 3"
+
+    stormhammer:
+        type: diamond_axe
+        name: "&9Stormhammer"
+        lore:
+          - "This rod is cold to"
+          - "the touch.  It crackles"
+          - "with static electricity."
+        enchants:
+          - "knockback 1"
+          
+    sun_staff:
+        type: golden_hoe
+        name: "&eSolar Staff"
+        lore:
+          - "A golden staff,"
+          - "glowing with solar"
+          - "energy."
+          
+    water_focus:
+        type: "diamond"
+        name: "&1Hydromantic Focus"
+        lore:
+            - "This crystal aids a mage"
+            - "in focussing the energy"
+            - "within water."
+
+    water_rod:
+        type: "diamond_hoe"
+        name: "&1Dowsing Rod"
+        lore:
+            - "With this rod,"
+            - "a hydromancer can"
+            - "find and navigate"
+            - "the world's waters."            
+ 
+##############         
+#Wand creation Spells
+
+
+bone_carving:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: death_grimoire
+    spell-icon: bone
+    xp-granted:
+        - apprentice 1 
+    cost:
+        - bone 1
+        - rotten_flesh 5
+        - health 5
+        - levels 5
+        - mana 50
+    memory: 5
+    quest:
+    - #TODO Kill 5 husks after reaching 5000 Novice MagicXP 
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    items:
+        - death_wand 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cast-self: "The wand grows eerily cold to the touch.  The work is done."
+    str-cost: "A bone, five rotten flesh, and five levels."
+    casttime: 240 # server ticks; 12 seconds
+    description: |
+        &5Bone Carving: 5 Memory Spell
+        Carve a bone to channel necromantic magic,
+        enhancing the casting of death spells.
+    effects:
+        grawr:
+            position: caster
+            effect: sound
+            sound: mob.ghast.affectionate_scream
+ 
+dowsing_rod:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: water_grimoire
+    spell-icon: "diamond_hoe"
+    xp-granted:
+        - apprentice 1 
+    cost:
+        - levels 5
+        - prismarine_crystals 5
+        - stick 1
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    memory: 5
+    quest:
+    - #TODO Connie after reaching 5000 Novice MagicXP
+    items:
+        - water_rod
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels, 5 prismarine crystals, and a stick."
+    
+dragon_compass:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: dragon_grimoire
+    xp-granted:
+        - apprentice 1
+    cost:
+        - compass 1
+        - levels 5
+        - mana 50
+    memory: 5
+    quest:
+    - #TODO Create a compass in the end 5000 Novice MagicXP required
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    items:
+        - dragon_sphere 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and a compass."
+    description: |
+            &2Scaled Compass: 5 Memory Spell.
+            Creates a magical compass for transportation.  
+    effects: #TODO Add whatever effects seem appropriate       
+
+fiery_staff:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: fire_grimoire
+    spell-icon: blaze_rod
+    xp-granted:
+        - apprentice 1
+    cost:
+        - levels 5
+        - blaze_rod 1
+        - mana 50
+    memory: 5
+    quest:
+    - #TODO Kill a blaze 5000 Novice MagicXP required
+    add-to-inventory: false
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    items:
+        - fire_staff 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cast-self: "You create a fiery staff."
+    str-cost: "A blaze rod and 5 levels."
+    description: |
+            Firestaff:  5 Memory Spell.
+            Creates a powerful wand of fire magic.
+            
+gardener:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: flora_grimoire
+    spell-icon: shears
+    xp-granted:
+        - apprentice 1
+    cost:
+        - levels 5
+        - shears 1
+        - mana 50
+    memory: 5
+    quest:
+    - #TODO Create shears in a forest biome 5000 Novice MagicXP required
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    items:
+        - forest_sickle
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and a pair of shears"
+    description: |
+        &2Woodland Gardener: 5 Memory Spell
+        Creates herbalist's enchanted sickle.
+        Requires the &2woodland amalgam&3 spell.
+    effects:
+        sound:
+          position: caster
+          effect: sound
+          sound: ambient.cave.1
+ 
+hydro_focus:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: water_grimoire
+    spell-icon: diamond
+    xp-granted:
+        - apprentice 1 
+    cost:
+        - levels 5
+        - prismarine_crystals 5
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    memory: 5
+    quest:
+    - #TODO Connie after reaching 5000 Novice MagicXP
+    items:
+        - water_focus
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and 5 prismarine crystals."
+    description: |
+            &1Hydromantic Focus: 5 Memory Water Spell
+            Create a hydromantic focus to direct water spells.
+            
+hunting_knife: #Connie probably a weapon spell that will need to be moved
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: knight_grimoire 
+    xp-granted:
+        - apprentice 1
+    cost:
+        - iron_sword 1
+        - levels 5
+        - mana 50
+    memory: 5
+    quest:
+    - #TODO Create an iron sword in a forest biome 5000 Novice MagicXP required
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    items:
+        - forest_sword 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and an iron sword."
+    description: |
+            &2Hunting Knife: 5 Memory Spell.
+            Creates a fine tool for carving up one's prey...  
+    effects: #TODO Add whatever effects seem appropriate        
+ 
+magic_pickaxe:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stone_grimoire
+    spell-icon: iron_pickaxe
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    xp-granted:
+        - apprentice 1 
+    cost:
+        - levels 5
+        - iron_pickaxe 1
+    memory: 5
+    quest:
+    - #TODO Create an iron pickaxe 5000 Novice MagicXP required
+    items:
+        - minepick
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "10 levels and an iron pick."
+    description: |
+        &8Magic Pickaxe: 5 Memory Spell
+
+ masons_trowel:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stone_grimoire
+    spell-icon: iron_shovel
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    xp-granted:
+        - apprentice 1 
+    cost:
+        - iron_shovel 1
+        - levels 5
+        - mana 50
+    memory: 5
+    quest:
+    - #TODO Create an iron shovel 5000 Novice MagicXP required
+    items:
+        - iron_trowel 1 
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"     
+    str-cost: "5 experience levels and an iron shovel."
+    description: |
+        &rTrowel   2 Memory Spell
+        &3Crafts an iron trowel. 
+
+solar_staff:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: sun_grimoire
+    xp-granted:
+        - apprentice 1
+    bindable: false
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    cost:
+        - mana 50
+        - levels 5
+        - gold_ingot 1
+        - stick 5
+    memory: 5
+    quest:
+    - #TODO Smelt a gold ore 5000 Novice MagicXP required
+    items:
+        - sun_staff 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cast-self: "With a flash, the gold shapes itself into a shining golden staff."
+    str-cost: "50 mana, a gold ingot, 5 levels, and 5 sticks."
+    description: |
+        &eSolar Staff:  5 Memory Spell
+        Infuse your wand with the life-giving energy of the sun.
+    effects:
+        kazam:
+            position: caster
+            effect: particles
+            particle-name: fireworksSpark
+            count: 20
+
+stormrod:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: storm_grimoire
+    spell-icon: diamond_axe
+    bindable: false
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    xp-granted:
+      - apprentice 1
+    cost:
+        - diamond 3
+        - stick 2
+        - mana 50
+        - levels 5
+    memory: 5
+    quest:
+    - #TODO Be struck by lightning 5000 Novice MagicXP required
+    items:
+        - stormhammer 1
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cast-self: "You create a stormhammer."
+    str-cost: "3 diamonds, 5 levels, 50 mana, and 2 sticks."
+    description: |
+        &rStormrod:  5 Memory Spell
+        &3You craft a storm rod.
+  
+woodland_wand:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: flora_grimoire
+    spell-icon: stick
+    xp-granted:
+        - apprentice 1
+    cost:
+        - levels 5
+        - oak_sapling 1
+        - mana 50
+    memory: 5
+    quest:
+    - #TODO Shear the leaves of an oak tree in a forest biome 5000 Novice MagicXP required
+    require-cast-item-on-command: true
+    allow-command-casting: true
+    bindable: false
+    items:
+        - forest_wand
+    modifiers:
+        - magicxpabove novice:5000 required
+    str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    str-cost: "5 levels and an oak sapling." 
+    description: |
+            &2Oak wand: 5 Memory Spell.
+            More effective than a mere stick could ever be.     
+    effects: #TODO Add whatever effects seem appropriate           

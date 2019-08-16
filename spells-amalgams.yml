@@ -1,0 +1,32 @@
+# Amalgams
+# Custom spell components consumed by some master level spells.
+
+predefined-items:
+
+
+
+#Amalgam creation spells
+
+
+
+
+
+woodland_amalgam:
+    permission-name: apprentice
+    spell-class: ".instant.ConjureSpell"
+    cast-item: forest_sickle
+    spell-icon: "351:2" #TODO
+    xp-granted:
+        - apprentice 1
+    cost:
+        - mana 40
+        - 39 1        # 1 brown mushroom
+        - 37 1        # 1 yellow flowers
+        - 38 1        # 1 red flower
+    memory: 4
+    items:
+      - flora_amalgam 4
+    str-cost: "40 mana, 1 brown mushroom, 1 yellow flower, and 1 red flower."
+    description: |
+            &2Herbal Amalgam: 4 Memory Spell
+            Prepare a woodland amalgam.

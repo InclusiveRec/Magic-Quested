@@ -112,7 +112,9 @@ lore_of_botany:
     - brown_mushroom
   memory: 5
   quest:
-    - #TODO Create a book while in a forest biome after acquiring 5000 Novice MagicXP
+    - #TODO Create a book while in a forest biome
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -139,7 +141,9 @@ lore_of_death:
     - bone 13
   memory:  5
   quest:
-    - #TODO Kill a skeleton after acquiring 5000 Novice MagicXP
+    - #TODO Kill a skeleton
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -174,7 +178,9 @@ lore_of_dragons:
     - dragon_breath 1
   memory: 5
   quest:
-    - #TODO Create a book in the end after acquiring 5000 Novice MagicXP
+    - #TODO Create a book in the end
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -200,7 +206,9 @@ lore_of_flame:
     - blaze_rod 5
   memory: 5
   quest:
-    - #TODO Create a book in the nether after acquiring 5000 Novice MagicXP
+    - #TODO Create a book in the nether
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   items:
     - fire_grimoire 1
   modifiers:
@@ -226,7 +234,9 @@ lore_of_hydromancy:
     - prismarine_crystals 5
   memory: 5
   quest:
-    - #TODO Create a book while in an ocean biome after acquiring 5000 Novice MagicXP
+    - #TODO Create a book while in an ocean biome
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -252,7 +262,9 @@ lore_of_knighthood:
     - iron_block 5
   memory: 5
   quest:
-    - #TODO Create an iron block after acquiring 5000 Novice MagicXP
+    - #TODO Create an iron block
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -277,7 +289,9 @@ lore_of_the_rock:
     - obsidian 1
   memory: 5
   quest:
-    - #TODO Create a book underground after acquiring 5000 Novice MagicXP
+    - #TODO Create a book underground
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -303,7 +317,9 @@ lore_of_shadow:
     - ink_sac 5
   memory: 5
   quest:
-    - #TODO Create book under a full moon after acquiring 5000 Novice MagicXP
+    - #TODO Create book under a full moon
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -329,7 +345,9 @@ lore_of_storms:
     - snowball 5
   memory: 5
   quest:
-    - #TODO Create book outside during a storm after acquiring 5000 Novice MagicXP
+    - #TODO Create book outside during a storm
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   items:
     - storm_grimoire 1
   modifiers:
@@ -355,7 +373,9 @@ lore_of_the_sun:
     - gold_block 1
   memory: 5
   quest:
-    - #TODO Create book outside during the day in a desert after acquiring 5000 Novice MagicXP
+    - #TODO Create book outside during the day in a desert
+  quest-modifiers:
+    - magicxpabove novice:5000 required
   items:
     - sun_grimoire
   modifiers:

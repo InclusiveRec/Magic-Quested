@@ -13,21 +13,21 @@ predefined-items:
 
 
 woodland_amalgam:
-    permission-name: apprentice
-    spell-class: ".instant.ConjureSpell"
-    cast-item: forest_sickle
-    spell-icon: cactus_green
-    xp-granted:
-        - apprentice 1
-    cost:
-        - mana 40
-        - brown_mushroom 1
-        - dandelion 1
-        - poppy 1
-    memory: 4
-    items:
-      - flora_amalgam 4
-    str-cost: "40 mana, 1 brown mushroom, 1 yellow flower, and 1 red flower."
-    description: |
-            &2Herbal Amalgam: 4 Memory Spell
-            Prepare a woodland amalgam.
+  permission-name: apprentice
+  spell-class: ".instant.ConjureSpell"
+  cast-item: forest_sickle
+  spell-icon: cactus_green
+  xp-granted:
+    - apprentice 1
+  cost:
+    - mana 40
+    - brown_mushroom 1
+    - dandelion 1
+    - poppy 1
+  memory: 4
+  items:
+    - flora_amalgam 4
+  str-cost: "40 mana, 1 brown mushroom, 1 yellow flower, and 1 red flower."
+  description: |
+    &2Herbal Amalgam: 4 Memory Spell
+    Prepare a woodland amalgam.

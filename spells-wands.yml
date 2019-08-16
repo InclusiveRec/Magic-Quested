@@ -158,7 +158,7 @@ bone_carving:
 dowsing_rod:
     permission-name: apprentice
     spell-class: ".instant.ConjureSpell"
-    cast-item: water_grimoire
+    cast-item: hydro_grimoire
     spell-icon: "diamond_hoe"
     xp-granted:
         - apprentice 1 
@@ -270,7 +270,7 @@ gardener:
 hydro_focus:
     permission-name: apprentice
     spell-class: ".instant.ConjureSpell"
-    cast-item: water_grimoire
+    cast-item: hydro_grimoire
     spell-icon: diamond
     xp-granted:
         - apprentice 1 

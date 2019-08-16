@@ -300,7 +300,7 @@ lore_of_shadow:
   cost:
     - book 1
     - levels 5
-    - ink_sack 5
+    - ink_sac 5
   memory: 5
   quest:
     - #TODO Create book under a full moon after acquiring 5000 Novice MagicXP
@@ -321,7 +321,6 @@ lore_of_storms:
   cast-item: book
   spell-icon: enchanted_book
   bindable: false
-  allow-command-casting: false
   xp-granted:
     - storm 1
   cost:

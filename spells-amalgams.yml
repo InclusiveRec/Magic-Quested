@@ -26,7 +26,7 @@ woodland_amalgam:
     - poppy 1
   memory: 4
   items:
-    - flora_amalgam 4
+    - flora_amalgam 4 #TODO Connie
   str-cost: "40 mana, 1 brown mushroom, 1 yellow flower, and 1 red flower."
   description: |
     &2Herbal Amalgam: 4 Memory Spell

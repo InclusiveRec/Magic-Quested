@@ -143,7 +143,7 @@ bone_carving:
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
   str-cast-self: "The wand grows eerily cold to the touch.  The work is done."
   str-cost: "A bone, five rotten flesh, and five levels."
-  casttime: 240 # server ticks; 12 seconds
+  cast-time: 240 # server ticks; 12 seconds
   description: |
     &5Bone Carving: 5 Memory Spell
     Carve a bone to channel necromantic magic,

@@ -135,7 +135,7 @@ bone_carving:
   quest:
     - #TODO Kill 5 husks after reaching 5000 Novice MagicXP 
   require-cast-item-on-command: true
-    bindable: false
+  bindable: false
   items:
     - death_wand 1
   modifiers:

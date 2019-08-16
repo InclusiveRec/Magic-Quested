@@ -344,7 +344,7 @@ magic_pickaxe:
     description: |
         &8Magic Pickaxe: 5 Memory Spell
 
- masons_trowel:
+masons_trowel:
     permission-name: apprentice
     spell-class: ".instant.ConjureSpell"
     cast-item: stone_grimoire

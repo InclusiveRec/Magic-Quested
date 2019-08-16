@@ -2,7 +2,8 @@
 # Custom spell components consumed by some master level spells.
 
 predefined-items:
-
+  this_cannot_be_empty:
+    type: stick
 
 
 #Amalgam creation spells

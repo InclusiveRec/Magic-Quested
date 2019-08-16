@@ -4,7 +4,7 @@ general:
     level: 3
     enableVolatileFeatures: true
     enableProfiling: false
-    enabled: true
+    enabled: false
   mana:
     strManaPotionOnCooldown: You cannot use another mana potion yet.
     manaPotionCooldown: 30

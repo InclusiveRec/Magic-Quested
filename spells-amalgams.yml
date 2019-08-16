@@ -16,14 +16,14 @@ woodland_amalgam:
     permission-name: apprentice
     spell-class: ".instant.ConjureSpell"
     cast-item: forest_sickle
-    spell-icon: "351:2" #TODO
+    spell-icon: cactus_green
     xp-granted:
         - apprentice 1
     cost:
         - mana 40
-        - 39 1        # 1 brown mushroom
-        - 37 1        # 1 yellow flowers
-        - 38 1        # 1 red flower
+        - brown_mushroom 1
+        - dandelion 1
+        - poppy 1
     memory: 4
     items:
       - flora_amalgam 4

@@ -5,7 +5,11 @@
 predefined-items:
 
   death_wand:
-    type: bone #TODO Please add enchanted look if possible
+    type: bone
+    flags:
+      - HIDE_ENCHANTS
+    enchants:
+      - unbreaking 1
     name: "&5Carved bone"
     lore:
       - "A wand carved from a bone"
@@ -14,7 +18,11 @@ predefined-items:
       - "of sacrificial animals."
 
   dragon_sphere:
-    type: compass   #TODO Please add enchanted look
+    type: compass
+    flags:
+      - HIDE_ENCHANTS
+    enchants:
+      - unbreaking 1
     name: "&5Scaled Compass"
     lore:
       - "Encrusted with dragon scales"
@@ -52,7 +60,11 @@ predefined-items:
 
 
   forest_wand:
-    type: stick    #TODO Please add enchanted look
+    type: stick
+    flags:
+      - HIDE_ENCHANTS
+    enchants:
+      - unbreaking 1
     name: "&2Oak_wand"
     lore:
       - "A branch cut from an oak tree, living,"

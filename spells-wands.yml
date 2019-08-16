@@ -135,8 +135,7 @@ bone_carving:
     quest:
     - #TODO Kill 5 husks after reaching 5000 Novice MagicXP 
     require-cast-item-on-command: true
-    allow-command-casting: true
-    bindable: false
+        bindable: false
     items:
         - death_wand 1
     modifiers:
@@ -167,7 +166,6 @@ dowsing_rod:
         - prismarine_crystals 5
         - stick 1
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     memory: 5
     quest:
@@ -193,7 +191,6 @@ dragon_compass:
     quest:
     - #TODO Create a compass in the end 5000 Novice MagicXP required
     require-cast-item-on-command: true
-    allow-command-casting: true
     items:
         - dragon_sphere 1
     modifiers:
@@ -221,7 +218,6 @@ fiery_staff:
     - #TODO Kill a blaze 5000 Novice MagicXP required
     add-to-inventory: false
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - fire_staff 1
@@ -249,7 +245,6 @@ gardener:
     quest:
     - #TODO Create shears in a forest biome 5000 Novice MagicXP required
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - forest_sickle
@@ -278,7 +273,6 @@ hydro_focus:
         - levels 5
         - prismarine_crystals 5
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     memory: 5
     quest:
@@ -307,7 +301,6 @@ hunting_knife: #Connie probably a weapon spell that will need to be moved
     quest:
     - #TODO Create an iron sword in a forest biome 5000 Novice MagicXP required
     require-cast-item-on-command: true
-    allow-command-casting: true
     items:
         - forest_sword 1
     modifiers:
@@ -325,7 +318,6 @@ magic_pickaxe:
     cast-item: stone_grimoire
     spell-icon: iron_pickaxe
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     xp-granted:
         - apprentice 1 
@@ -350,7 +342,6 @@ masons_trowel:
     cast-item: stone_grimoire
     spell-icon: iron_shovel
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     xp-granted:
         - apprentice 1 
@@ -379,7 +370,6 @@ solar_staff:
         - apprentice 1
     bindable: false
     require-cast-item-on-command: true
-    allow-command-casting: true
     cost:
         - mana 50
         - levels 5
@@ -412,7 +402,6 @@ stormrod:
     spell-icon: diamond_axe
     bindable: false
     require-cast-item-on-command: true
-    allow-command-casting: true
     xp-granted:
       - apprentice 1
     cost:
@@ -449,7 +438,6 @@ woodland_wand:
     quest:
     - #TODO Shear the leaves of an oak tree in a forest biome 5000 Novice MagicXP required
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - forest_wand

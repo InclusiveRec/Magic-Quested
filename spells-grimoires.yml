@@ -110,7 +110,6 @@ lore_of_botany:
     quest:
     - #TODO Create a book while in a forest biome after acquiring 5000 Novice MagicXP
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
       - flora_grimoire
@@ -138,7 +137,6 @@ lore_of_death:
     quest:
     - #TODO Kill a skeleton after acquiring 5000 Novice MagicXP
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - death_grimoire 1
@@ -174,7 +172,6 @@ lore_of_dragons:
     quest:
     - #TODO Create a book in the end after acquiring 5000 Novice MagicXP
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - dragon_grimoire 1
@@ -206,7 +203,6 @@ lore_of_flame:
         - magicxpabove novice:5000 required
     str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     str-cost: "A book, 5 levels, and five blaze rods."
     description: |
@@ -228,7 +224,6 @@ lore_of_hydromancy:
     quest:
     - #TODO Create a book while in an ocean biome after acquiring 5000 Novice MagicXP
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - hydro_grimoire
@@ -255,7 +250,6 @@ lore_of_knighthood:
     quest:
     - #TODO Create an iron block after acquiring 5000 Novice MagicXP
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - knight_grimoire 1
@@ -281,7 +275,6 @@ lore_of_the_rock:
     quest:
     - #TODO Create a book underground after acquiring 5000 Novice MagicXP
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - stone_grimoire
@@ -308,7 +301,6 @@ lore_of_shadow:
     quest:
     - #TODO Create book under a full moon after acquiring 5000 Novice MagicXP
     require-cast-item-on-command: true
-    allow-command-casting: true
     bindable: false
     items:
         - shadow_grimoire 1
@@ -354,11 +346,10 @@ lore_of_the_sun:
         - apprentice 1
     bindable: false
     require-cast-item-on-command: true
-    allow-command-casting: true
     cost:
-        - levels 5
-        - book 1
-        - gold_block 1
+      - levels 5
+      - book 1
+      - gold_block 1
     memory: 5
     quest:
     - #TODO Create book outside during the day in a desert after acquiring 5000 Novice MagicXP

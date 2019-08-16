@@ -5,59 +5,59 @@ predefined-items:
 
     fauna_amalgam:
         type: brown_dye
-        name: "&2Animalia Amalgam"
+        name: "&2Animalia Essence"
         lore:
-            - "Concoction"
-            - "created from the essence"
-            - "of creatures."
+            - "Created from fusing animal pelts and an egg."
+            - "Thank goodness there's no poop in here."
+            - "This is amalgam, not fertilizer. (Eww...)"
   
     flame_amalgam:
          type: red_dye
-         name: "&4Fire Amalgam"
+         name: "&4Molten Mass"
          lore:
-            - "The Hottest Substance"
-            - "known"
-            - "Used to harness the power of the Center Core"
+            - "A glowing mass that radiates a low heat."
+            - "It feels connected with the core of the world."
+            - "Storing on wooden shelves is not advised."
 
     flora_amalgam:
         type: green_dye
-        name: "&2Herbal Amalgam"
+        name: "&2Herbal Compound"
         lore:
-            - "A mix of various"
-            - "wildflowers and"
-            - "woodland plants."
+            - "Ferns and seagrass do not mix well on their own."
+            - "Sugar cane works as a binder for these plants."
+            - "No flowers here.  What are you wanting?  Medicine?"
 
     mortar:
+        type: gray_dye
         name: "&8Mortar"
         lore:
-          - "A wet, sticky mixture"
-          - "of dirt and clay"
-          - "used in masonry."
-        type: gray_dye
+            - "The glue for many a stone structure."
+            - "I wonder why dirt is used and not sand?"
+            - "Good for spreading on bricks, not bread."
 
     hydro_amalgam:
          type: blue_dye
-         name: "&4Hydro Amalgam"
+         name: "&4Slush Ball"
          lore:
-             - "A whirl of"
-             - "magic from rivers"
-             - "and oceans."
+             - "A lump of crushed ice and water."
+             - "Cold to the touch and occasionally drips."
+             - "Too bad mana isn't good to ingest.  For now."
 
     sun_amalgam:
         type: yellow_dye
-        name: "&eSolar Amalgam"
+        name: "&eGilded Paste"
         lore:
-            - "The elves combine sunflowers"
-            - "with a bar of gold"
-            - "to create this special mixture"
+            - "Mixing sunflowers and gold results in a weird"
+            - "paste which shines in the light of the sun."
+            - "SPF Protection: -100"
   
     storm_amalgam:
         type: light_gray_dye
-        name: "&7Storm Amalgam"
+        name: "&7Cloud Puff"
         lore:
-            - "The concentrated power"
-            - "of a storm is contained"
-            - "within this amalgam."
+            - "Eletrifying the water immediately vaporized it."
+            - "There is is enough charge for it to hold together."
+            - "Prone to static discharge when held.  What a shocker."
 
 ########################            
 #Amalgam creation spells

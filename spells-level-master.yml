@@ -21,7 +21,7 @@ storm:
   quest-modifiers:
     - magicxpabove novice:80000 required
     - magicxpabove apprentice:8000 required
-    - outisde required
+    - outside required
     - storm required
   str-cost: 80 mana and 8 storm amalgams.
   spell: stormy-helper

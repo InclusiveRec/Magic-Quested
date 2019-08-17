@@ -5,7 +5,7 @@ storm:
     permission-name: master
     spell-class: ".instant.RitualSpell"
     xp-granted:
-        - apprentice 1 
+        - apprentice 1
         - novice 1
         - master 1
     cooldown: 300
@@ -45,10 +45,10 @@ storm:
     str-ritual-success: "The diamond shatters between your hands into a spray of ice."
     str-modifier-failed: To start the ritual, you must stand on a carpet with a clear view of the sky.
     effects:
-      charging:
-        position: caster
-        effect: sound
-        sound: ambient.weather.thunder
-        volume: 0.4
-        pitch: 0.5
+        charging:
+            position: caster
+            effect: sound
+            sound: ambient.weather.thunder
+            volume: 0.4
+            pitch: 0.5
             

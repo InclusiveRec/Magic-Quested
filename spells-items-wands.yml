@@ -3,6 +3,13 @@
 
 
 predefined-items:
+  wand:
+    type: stick
+    flags:
+      - HIDE_ENCHANTS
+    enchants:
+      - unbreaking 1
+    name: "&f&lOrdinary Wand"
 
   death_wand:
     type: bone

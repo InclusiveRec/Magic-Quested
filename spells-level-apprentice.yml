@@ -11,7 +11,7 @@ blink:
   cast-item: stick, scaled-compass
   memory: 4
   quest:
-    - variable meta-statistic-use-item-enderpearl 40
+    - variable meta-statistic-use-item-ender-pearl 40
   cost:
     - mana 40
     - spider-eye 4

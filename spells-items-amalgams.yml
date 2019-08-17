@@ -185,7 +185,7 @@ mix-mortar:
     - mortar 4
     - bucket 2
   modifiers:
-    - holding iron-shovel|&8Mason's-Trowel power 3
+    - holding iron-shovel|&8Mason's-Trowel power 3 #TODO Change to cast item
   power-affects-quantity: true
   str-cost: "Mix 3 parts dirt with 1 part clay and 2 buckets of water."
   str-on-cooldown: ""

@@ -294,7 +294,7 @@ lore_of_the_rock:
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
-    - lightbelow 5 required
+    - lightlevelbelow 5 required
     - variablelessthan meta_location_y:30 required
     - outside denied
   require-cast-item-on-command: true

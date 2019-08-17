@@ -167,7 +167,7 @@ leap:
   effects:
     boing:
       effect: BlockBreak
-      id: "wool"
+      id: "whitewool"
 
 lifewalk:
   permission-name: novice

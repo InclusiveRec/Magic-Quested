@@ -185,7 +185,7 @@ mix_mortar:
         - mortar 4
         - bucket 2
     modifiers:
-        - holding 256|&8Mason's_Trowel power 3
+      - holding iron_shovel|&8Mason's_Trowel power 3
     power-affects-quantity: true
     str-cost: "Mix 3 parts dirt with 1 part clay and 2 buckets of water."
     str-on-cooldown: ""
@@ -230,7 +230,7 @@ storm_amalgam:
     quest-consume: false
     items:
         - storm_amalgam 4-6
-        - bottle 1
+        - glass_bottle 1
     cost:
         - flint_and_steel 1
         - potion 1

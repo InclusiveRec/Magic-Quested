@@ -21,7 +21,7 @@ storm:
         - kill charged_creeper 8
     quest-modifiers:
         - magicxpabove novice:80000 required
-        - magicxpabove apprentice: 8000 required
+        - magicxpabove apprentice:8000 required
         - outisde required
         - storm required
     str-cost: 80 mana and 8 storm amalgams.

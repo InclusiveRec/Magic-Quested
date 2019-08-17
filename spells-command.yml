@@ -1,6 +1,5 @@
 list:
   spell-class: ".command.ListSpell"
-  name: list
   always-granted: true
   description: List all the spells you know.
   only-show-castable-spells: false
@@ -23,22 +22,9 @@ help:
     - "%s - %d"
     - "Cost: %c"
 
-teach:
-  spell-class: ".command.TeachSpell"
-  name: teach
-  description: Teach a spell to another player.
-  require-known-spell: true
-  str-usage: "Usage: /cast teach <target> <spell>"
-  str-no-target: No such player.
-  str-no-spell: You do not know a spell by that name.
-  str-cant-teach: You can't teach that spell.
-  str-cant-learn: That person cannot learn that spell.
-  str-cast-self: You have taught %t the %s spell.
-  str-cast-target: "%a has taught you the %s spell."
-
 forget:
   spell-class: ".command.ForgetSpell"
-  name: forget
+  always-granted: true
   description: Make a player forget a spell.
   allow-self-forget: true
 
@@ -52,9 +38,22 @@ forget:
   str-reset-target: "You have reset %t's spellbook."
   str-reset-self: "You have forgotten all of your spells."
 
+teach:
+  spell-class: ".command.TeachSpell"
+  description: Teach a spell to another player.
+  require-known-spell: true
+  str-usage: "Usage: /cast teach <target> <spell>"
+  str-no-target: No such player.
+  str-no-spell: You do not know a spell by that name.
+  str-cant-teach: You can't teach that spell.
+  str-cant-learn: That person cannot learn that spell.
+  str-cast-self: You have taught %t the %s spell.
+  str-cast-target: "%a has taught you the %s spell."
+
+
 bind:
   spell-class: ".command.BindSpell"
-  name: bind
+
   enabled: true
   description: Binds a spell to a wand item.
   allow-bind-to-fist: false

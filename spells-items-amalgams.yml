@@ -77,7 +77,10 @@ beastial_amalgam:
         - egg 1
     memory: 1
     quest:
-    - #TODO Collect an egg, leather, and rabbit hide 
+      - egg 1
+      - leather 1
+      - rabbit_hide 1
+    quest-consume: false
     items:
       - fauna_amalgam 2
     str-cost: "10 mana, an egg, leather, and rabbit hide."
@@ -99,7 +102,10 @@ botanical_amalgam:
         - seagrass 1
     memory: 1
     quest:
-    - #TODO Collect a fern, sugar cane, and seagrass
+      - fern 1
+      - sugarcane 1
+      - seagrass 1
+    quest-consume: false
     items:
       - flora_amalgam 3
     str-cost: "10 mana, a fern, sugar cane, and seagrass."
@@ -116,7 +122,9 @@ fire_amalgam:
         - novice 1
     memory: 1
     quest:
-    - #TODO Collect netherrack and a bucket of lava
+      - netherrack 1
+      - lava_bucket 1
+    quest-consume: false
     items:
         - flame_amalgam 1
         - bucket 1
@@ -145,7 +153,8 @@ hydro_amalgam:
         - water_bucket 1
     memory: 1
     quest:
-    - #TODO Collect ice
+      - ice 1
+    quest-consume: false
     items:
         - hydro_amalgam 1
         - bucket 1
@@ -169,7 +178,9 @@ mix_mortar:
     cooldown: 1
     memory: 1
     quest:
-    - #TODO Collect dirt and clay
+      - dirt 1
+      - clayball 1
+    quest-consume: false
     items:
         - mortar 4
         - bucket 2
@@ -191,7 +202,9 @@ solar_amalgam:
         - novice 1
     memory: 1
     quest:
-    - #TODO Collect a sunflower and gold nugget
+      - sunflower 1
+      - gold_nugget 1
+    quest-consume: false
     cost:
         - mana 10
         - gold_nugget 1
@@ -213,7 +226,8 @@ storm_amalgam:
         - novice 1 
     memory: 1
     quest:
-    - #TODO create a flint and steel
+      - flintandsteel 1
+    quest-consume: false
     items:
         - storm_amalgam 4-6
         - bottle 1

@@ -89,7 +89,7 @@ gate:
     - recall 120
   memory: 3
   quest:
-    - Visit any 5 biomes #TODO
+    - #TODO Visit any 5 biomes
   bindable: false
   str-cost: "30 mana"
   str-cast-others: "%a appears!"
@@ -109,7 +109,7 @@ haste:
     - sugar 2
   memory: 2
   quest:
-    - Visit any 10 biomes #TODO
+    - #TODO Visit any 10 biomes
   boost-duration: 300
   duration: 60
   effect-strength: 2

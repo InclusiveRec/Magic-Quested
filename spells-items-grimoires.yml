@@ -111,10 +111,11 @@ lore_of_botany:
     - poppy
     - brown_mushroom
   memory: 5
-  quest:
-    - #TODO Create a book while in a forest biome
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - biome FOREST required
+  quest-triggers:
+    - craft book
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -140,10 +141,10 @@ lore_of_death:
     - skeleton_skull 1
     - bone 13
   memory:  5
-  quest:
-    - #TODO Kill a skeleton
   quest-modifiers:
     - magicxpabove novice:5000 required
+  quest-triggers:
+    - kill skeleton
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -177,10 +178,11 @@ lore_of_dragons:
     - popped_chorus_fruit 5
     - dragon_breath 1
   memory: 5
-  quest:
-    - #TODO Create a book in the end
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - biome THE_END required
+  quest-triggers:
+    - craft book
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -205,10 +207,11 @@ lore_of_flame:
     - levels 5
     - blaze_rod 5
   memory: 5
-  quest:
-    - #TODO Create a book in the nether
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - biome NETHER required
+  quest-triggers:
+    - craft book
   items:
     - fire_grimoire 1
   modifiers:
@@ -233,10 +236,11 @@ lore_of_hydromancy:
     - book 1
     - prismarine_crystals 5
   memory: 5
-  quest:
-    - #TODO Create a book while in an ocean biome
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - biome OCEAN required
+  quest-triggers:
+    - craft book
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -261,8 +265,8 @@ lore_of_knighthood:
     - book 1
     - iron_block 5
   memory: 5
-  quest:
-    - #TODO Create an iron block
+  quest-triggers:
+    - craft IRON_BLOCK
   quest-modifiers:
     - magicxpabove novice:5000 required
   require-cast-item-on-command: true
@@ -288,10 +292,11 @@ lore_of_the_rock:
     - levels 5
     - obsidian 1
   memory: 5
-  quest:
-    - #TODO Create a book underground
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - lightbelow 5 required
+    - variablelessthan meta_location_y:30 required
+    - outside denied
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -316,10 +321,11 @@ lore_of_shadow:
     - levels 5
     - ink_sac 5
   memory: 5
-  quest:
-    - #TODO Create book under a full moon
+  quest-triggers:
+    - craft book
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - moonphase full required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -344,10 +350,12 @@ lore_of_storms:
     - levels 5
     - snowball 5
   memory: 5
-  quest:
-    - #TODO Create book outside during a storm
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - outside required
+    - storm required
+  quest-triggers:
+    - craft book
   items:
     - storm_grimoire 1
   modifiers:
@@ -372,10 +380,12 @@ lore_of_the_sun:
     - book 1
     - gold_block 1
   memory: 5
-  quest:
-    - #TODO Create book outside during the day in a desert
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - outside required
+    - biome DESERT required
+  quest-triggers:
+    - craft book
   items:
     - sun_grimoire
   modifiers:

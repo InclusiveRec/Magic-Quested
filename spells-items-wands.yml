@@ -152,7 +152,7 @@ bone_carving:
     - mana 50
   memory: 5
   quest:
-    - #TODO Kill 5 husks
+    - variable meta_statistic_kill_entity_HUSK 5
   quest-modifiers:
     - magicxpabove novice:5000 required
   require-cast-item-on-command: true
@@ -211,10 +211,11 @@ dragon_compass:
     - levels 5
     - mana 50
   memory: 5
-  quest:
-    - #TODO Create a compass in the end
+  quest-triggers:
+    - craft compass
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - biome end required
   require-cast-item-on-command: true
   items:
     - dragon_sphere 1
@@ -239,8 +240,8 @@ fiery_staff:
     - blaze_rod 1
     - mana 50
   memory: 5
-  quest:
-    - #TODO Kill a blaze
+  quest-triggers:
+    - kill blaze
   quest-modifiers:
     - magicxpabove novice:5000 required
   add-to-inventory: false
@@ -269,10 +270,11 @@ gardener:
     - shears 1
     - mana 50
   memory: 5
-  quest:
-    - #TODO Create shears in a forest biome
+  quest-triggers:
+    - craft shears
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - biome forest required
   require-cast-item-on-command: true
   bindable: false
   items:
@@ -329,10 +331,11 @@ hunting_knife: #Connie probably a weapon spell that will need to be moved
     - levels 5
     - mana 50
   memory: 5
-  quest:
-    - #TODO Create an iron sword in a forest biome
+  quest-triggers:
+    - craft iron_sword
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - biome forest required
   require-cast-item-on-command: true
   items:
     - forest_sword 1
@@ -358,8 +361,8 @@ magic_pickaxe:
     - levels 5
     - iron_pickaxe 1
   memory: 5
-  quest:
-    - #TODO Create an iron pickaxe
+  quest-triggers:
+    - craft iron_pickaxe
   quest-modifiers:
     - magicxpabove novice:5000 required
   items:
@@ -385,8 +388,8 @@ masons_trowel:
     - levels 5
     - mana 50
   memory: 5
-  quest:
-    - #TODO Create an iron shovel
+  quest-triggers:
+    - craft iron_shovel
   quest-modifiers:
     - magicxpabove novice:5000 required
   items:
@@ -414,7 +417,8 @@ solar_staff:
     - stick 5
   memory: 5
   quest:
-    - #TODO Smelt a gold ore
+    - gold_ingot 1
+  quest-consume: false
   quest-modifiers:
     - magicxpabove novice:5000 required
   items:
@@ -449,10 +453,10 @@ stormrod:
     - mana 50
     - levels 5
   memory: 5
-  quest:
-    - #TODO Be struck by lightning
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - outside required
+    - storm required
   items:
     - stormhammer 1
   modifiers:
@@ -476,10 +480,12 @@ woodland_wand:
     - oak_sapling 1
     - mana 50
   memory: 5
-  quest:
-    - #TODO Shear the leaves of an oak tree in a forest biome
+  quest-triggers:
+    - blockbreak oak_leaves
   quest-modifiers:
     - magicxpabove novice:5000 required
+    - holding shears required
+    - biome required required
   require-cast-item-on-command: true
   bindable: false
   items:

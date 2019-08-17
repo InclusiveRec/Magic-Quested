@@ -62,17 +62,17 @@ general:
     opsIgnoreReagents: true
     opsIgnoreCooldowns: true
     enableTempGrantPerms: true
-memory:
-  strings:
-    strMemory: You have used %memory memory out of %total.
-    outOfMemory: You don't have enough memory.
-  maxMemoryDefault: 100
-  maxMemory: {}
-magicxp:
-  strings:
-    expLearned: You have learned the %s spell!
-    header: ''
-    noXp: You have no MagicXP
-  autoLearn: false
-  schoolNames:
-    novice: Novice
+  memory:
+    strings:
+      strMemory: You have used %memory memory out of %total.
+      outOfMemory: You don't have enough memory.
+    maxMemoryDefault: 100
+    maxMemory: {}
+  magicxp:
+    strings:
+      expLearned: You have learned the %s spell!
+      header: ''
+      noXp: You have no MagicXP
+    autoLearn: false
+    schoolNames:
+      novice: Novice

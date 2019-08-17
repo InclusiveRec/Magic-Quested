@@ -8,12 +8,23 @@ blink:
   name: blink
   spell-icon: ender_pearl
   description: Teleport a short distance.
-  cast-item: stick
+  cast-item: stick, scaled_compass
   memory: 4
-  cooldown: 4
+  quest:
+    - variable meta_statistic_use_item_ENDERPEARL 40
+  cost:
+    - mana 40
+    - spider_eye 4
   range: 40
   pass-through-ceiling: false
   smoke-trail: true
+  modifiers:
+    - MagicXpAbove novice:4000 required
+	- holding stormhammer power 2
+  str-cost: 40 mana and 4 spider_eye
+  str-cast-self: You blink away!
+  str-cast-others: "%a blinks away!"
+  str-cant-blink: You cannot blink there.
   effects:
     1:
       position: pos1
@@ -21,12 +32,150 @@ blink:
     2:
       position: pos2
       effect: EnderSignal
-  cost:
-    - mana 40
-    - spider_eye 4
-  modifiers:
-    - MagicXpAbove novice:4000 required
-  str-cost: 40 mana and 4 spider_eye
-  str-cast-self: You blink away!
-  str-cast-others: "%a blinks away!"
-  str-cant-blink: You cannot blink there.
+
+freeze:
+    permission-name: apprentice
+    spell-class: ".instant.FreezeSpell"
+    cast-item: water_focus,stick
+    spell-icon: snow_ball
+    xp-granted:
+        - apprentice 1 
+        - novice 1  
+    cost:
+        - mana 50
+        - snow_ball 1
+    memory: 5
+  quest:
+    - variable meta_statistic_use_item_SNOWBALL 50
+    cooldown: 3
+    damage: 2
+    horizontal-spread: 15
+    power-affects-duration: true
+    slow-amount: 2
+    slow-duration: 80
+    snowballs: 25
+    spell-power-affects-range: true
+    target-players: true
+    vertical-spread: 5
+    modifiers:
+        - onblock snow,ice,packed_ice,blue_ice power 2
+        - holding hydromantic__focus cooldown 0.2
+    str-cost: "50 mana and a snowball."
+    str-on-cooldown: ""
+    description: |
+        &1Freeze:  5 Memory Spell
+        Blast forth a flurry of icy shards which damage and slow all in their path.
+    effects:
+  
+gust:
+    permission-name: apprentice
+    spell-class: ".instant.ForcepushSpell"
+    cast-item: stormhammer, stick
+    spell-icon: feather
+    xp-granted: 
+        - apprentice 1 
+        - novice 1  
+    cost:
+        - mana 40
+        - feather 1
+    cooldown: 3
+    range: 16
+    horizontal-force: 30
+    vertical-force: 10
+    target-players: true
+    memory: 4
+  quest:
+    - givedamage feather
+  quest-modifiers:
+    - magicxpabove novice:4000 required
+	- outside required
+	- storm required
+    modifiers:
+        - outside continue
+        - storm power 2
+		- holding stormhammer power 2
+    description: |
+        &rGust   4 Memory School
+        &3With a flick of the wrist, the mage blows their enemies away.
+        This spell is greatly empowered during a &9storm&3.
+    str-cost: "40 mana and a feather"
+    str-cast-others: "%a blows a powerful gust of wind!"
+    str-cast-self: You blow a powerful wind gust at your enemies!
+    effects:
+	
+lightning:
+    permission-name: apprentice
+    spell-class: ".targeted.LightningSpell"
+    cast-item: stormhammer
+    spell-icon: gold_sword
+    xp-granted:
+        - apprentice 1 
+        - novice 1  
+    cost:
+        - mana 60
+        - wool 1
+    cooldown: 10
+    memory: 6
+    quest:
+    - variable meta_statistic_use_item_FLINT_AND_STEEL 6
+    quest-modifiers:
+        - magicxpabove novice:6000 required
+	    - outside required
+	    - storm required
+    range: 20
+    check-plugins: true
+    obey-los: true
+    require-entity-target: false
+    spell-power-affects-range: true
+    target-players: true
+    modifiers:
+        - outside required
+        - storm required
+        - holding stormhammer power 2.5
+    description: |
+        &rLightning   6 Memory School
+        &3The mage calls down single lightning bolt.
+        During a &9storm&3, lightning can be called with great frequency.
+    str-cost: 25 mana and a handful of wool
+    str-cast-self: You call down lightning.
+    str-cast-others: "%a calls down lightning."
+    str-on-cooldown: ""
+    str-modifier-failed: You can only target areas outside.
+            
+windwalk:
+    permission-name: apprentice
+    spell-class: ".buff.WindwalkSpell"
+    cast-item: stormhammer, stick
+    spell-icon: diamond_boots
+    xp-granted:
+        - apprentice 1 
+        - novice 1 
+    cost:
+        - mana 40
+        - feather 2
+    use-cost:
+        - mana 20
+        - feather 1
+    cooldown: 300
+    memory: 4
+    quest:
+    - fly
+    quest-modifiers:
+        - magicxpabove novice:4000 required
+	    - outside required
+	    - storm required
+    fly-speed: 0.3
+    launch-speed: 5
+    requires: storm
+    use-cost-interval: 5
+    modifiers:
+        - storm required
+        - outside required
+        - holding stormhammer power 2
+    str-cost: 40 mana and two feathers initially; 20 mana and a feather every 5 seconds thereafter.
+    str-cost-self: You rise up into the stormy sky!
+    str-cost-others: "%a rises up into the stormy sky!"
+    str-fade: The winds cease to support you, and you descend...
+    description: |
+        &rWindwalk   4 Memory Spell
+        The caster rides the winds of a raging storm.	

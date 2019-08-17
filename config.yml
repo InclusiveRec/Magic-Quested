@@ -74,4 +74,5 @@ magicxp:
     header: ''
     noXp: You have no MagicXP
   autoLearn: false
-  schoolNames: {}
+  schoolNames:
+    novice: Novice

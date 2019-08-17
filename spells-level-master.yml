@@ -2,53 +2,51 @@
 
 
 storm:
-    permission-name: master
-    spell-class: ".instant.RitualSpell"
-    xp-granted:
-        - apprentice 1
-        - novice 1
-        - master 1
-    cooldown: 300
-    cast-item: stormhammer
-    require-cast-item-on-command: true
-    allow-command-casting: true
-    ritual-duration: 400
-    cost:
-        - mana 80
-        - storm_amalgam 8
-    memory: 8
-    quest:
-        - kill charged_creeper 8
-    quest-modifiers:
-        - magicxpabove novice:80000 required
-        - magicxpabove apprentice:8000 required
-        - outisde required
-        - storm required
-    str-cost: 80 mana and 8 storm amalgams.
-    spell: stormy-helper
-    req-participants: 3
-    need-spell-to-participate: false
-    modifiers:
-        - outside required
-        - inblock white_wool required
-        - magicxpabove apprentice:8000 required
-        - magicxpabove novice:80000 required
-    charge-reagents-immediately: true
-    always-activate: true
-    description: |
-        &rStorm   8 Memory Spell
-        &3Harnessing the air's latent electrical energy, the mage calls forth a powerful &9storm&3.
-    str-cast-self: "You stand upon the mat, grimoire in one hand and a diamond in the other, close your eyes, and concentrate."
-    str-cast-others: "%a has begun a ritual to summon rain.  Right-click to participate."
-    str-ritual-interrupted: "The diamond melts and drips from your hand.  The ritual has failed."
-    str-ritual-joined: "You reach forward, joining hands with %a around the outstretched diamond, and a ripple of energy passes between your hands."
-    str-ritual-success: "The diamond shatters between your hands into a spray of ice."
-    str-modifier-failed: To start the ritual, you must stand on a carpet with a clear view of the sky.
-    effects:
-        charging:
-            position: caster
-            effect: sound
-            sound: ambient.weather.thunder
-            volume: 0.4
-            pitch: 0.5
+  permission-name: master
+  spell-class: ".instant.RitualSpell"
+  xp-granted:
+    - apprentice 1
+    - novice 1
+    - master 1
+  cooldown: 300
+  cast-item: stormhammer
+  require-cast-item-on-command: true
+  ritual-duration: 400
+  cost:
+    - mana 80
+    - storm_amalgam 8
+  memory: 8
+  quest:
+    - kill creeper 8
+  quest-modifiers:
+    - magicxpabove novice:80000 required
+    - magicxpabove apprentice:8000 required
+    - outisde required
+    - storm required
+  str-cost: 80 mana and 8 storm amalgams.
+  spell: stormy-helper
+  req-participants: 3
+  need-spell-to-participate: false
+  modifiers:
+    - outside required
+    - inblock white_wool required
+    - magicxpabove apprentice:8000 required
+    - magicxpabove novice:80000 required
+  charge-reagents-immediately: true
+  description: |
+    &rStorm   8 Memory Spell
+    &3Harnessing the air's latent electrical energy, the mage calls forth a powerful &9storm&3.
+  str-cast-self: "You stand upon the mat, grimoire in one hand and a diamond in the other, close your eyes, and concentrate."
+  str-cast-others: "%a has begun a ritual to summon rain.  Right-click to participate."
+  str-ritual-interrupted: "The diamond melts and drips from your hand.  The ritual has failed."
+  str-ritual-joined: "You reach forward, joining hands with %a around the outstretched diamond, and a ripple of energy passes between your hands."
+  str-ritual-success: "The diamond shatters between your hands into a spray of ice."
+  str-modifier-failed: To start the ritual, you must stand on a carpet with a clear view of the sky.
+  effects:
+    charging:
+      position: caster
+      effect: sound
+      sound: ambient.weather.thunder
+      volume: 0.4
+      pitch: 0.5
             

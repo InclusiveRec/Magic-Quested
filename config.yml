@@ -76,3 +76,4 @@ general:
     autoLearn: false
     schoolNames:
       novice: Novice
+      apprentice: Apprentice

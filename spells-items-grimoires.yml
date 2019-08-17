@@ -3,8 +3,8 @@
 
 predefined-items:
 
-  death_grimoire:
-    type: "enchanted_book"
+  death-grimoire:
+    type: "enchanted-book"
     name: "&5Necronomicon"
     lore:
       - "Within these pages lie the secrets."
@@ -12,8 +12,8 @@ predefined-items:
       - "in perusal.  The allure of undead"
       - "has taken the sanity of many."
 
-  dragon_grimoire:
-    type: enchanted_book
+  dragon-grimoire:
+    type: enchanted-book
     name: "&5Lexica Draconica"
     lore:
       - "Records of the realm from a dragon's"
@@ -21,8 +21,8 @@ predefined-items:
       - "lay within these pages."
       - ""
 
-  fire_grimoire:
-    type: "enchanted_book"
+  fire-grimoire:
+    type: "enchanted-book"
     name: "&4Scorched Volume"
     lore:
       - "At first glace, this book appears to be"
@@ -30,16 +30,16 @@ predefined-items:
       - "Peering closer reveals writing within the"
       - "scorched areas, revealing the true contents."
 
-  flora_grimoire:
-    type: enchanted_book
+  flora-grimoire:
+    type: enchanted-book
     name: "&2Herbology & Animalia"
     lore:
       - "A compendium of druidic knowledge"
       - "concerning the flora and fauna"
       - "of the wilderness."
 
-  hydro_grimoire:
-    type: "enchanted_book"
+  hydro-grimoire:
+    type: "enchanted-book"
     name: "&1Waves of Knowledge"
     lore:
       - "A treatise on the magic"
@@ -47,8 +47,8 @@ predefined-items:
       - "and beneath the seas, and"
       - "the secrets to harnessing it."
 
-  knight_grimoire:
-    type: "enchanted_book"
+  knight-grimoire:
+    type: "enchanted-book"
     name: "&8For Chivalry"
     lore:
       - "Details the rules, disciplines,"
@@ -56,8 +56,8 @@ predefined-items:
       - "As well, it contains the crests"
       - "and histories of rulers."
 
-  shadow_grimoire:
-    type: enchanted_book
+  shadow-grimoire:
+    type: enchanted-book
     name: "&7Negative Space"
     lore:
       - "For every glowing torch, there is a"
@@ -65,8 +65,8 @@ predefined-items:
       - "darkness follows.  Read these pages in"
       - "darkness and their secreted will appear."
 
-  sun_grimoire:
-    type: "enchanted_book"
+  sun-grimoire:
+    type: "enchanted-book"
     name: "&eRays of Wisdom"
     lore:
       - "Detailed observations of the movements"
@@ -74,8 +74,8 @@ predefined-items:
       - "mages expect. This tome contains theories"
       - "to harness its power."
 
-  stone_grimoire:
-    type: "enchanted_book"
+  stone-grimoire:
+    type: "enchanted-book"
     name: "&8Ancient Slate"
     lore:
       - "Ancients secrets of the earth and stone"
@@ -83,8 +83,8 @@ predefined-items:
       - "is warm to the touch and appears to"
       - "resonate with the surrounding ground."
 
-  storm_grimoire:
-    type: enchanted_book
+  storm-grimoire:
+    type: enchanted-book
     name: "&9Sky's Wrath"
     lore:
       - "The sky can be fickle with its emotions."
@@ -96,11 +96,11 @@ predefined-items:
 #Grimoire creation spells
 #########################
 
-lore_of_botany:
+lore-of-botany:
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: enchanted_book
+  spell-icon: enchanted-book
   xp-granted:
     - apprentice 1
   cost:
@@ -109,7 +109,7 @@ lore_of_botany:
     - sapling 1
     - dandelion
     - poppy
-    - brown_mushroom
+    - brown-mushroom
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
@@ -119,7 +119,7 @@ lore_of_botany:
   require-cast-item-on-command: true
   bindable: false
   items:
-    - flora_grimoire
+    - flora-grimoire
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
@@ -128,17 +128,17 @@ lore_of_botany:
     &2Botanical Lore: 5 Memory Spell
     Creates a botanical grimoire.
 
-lore_of_death:
+lore-of-death:
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: enchanted_book
+  spell-icon: enchanted-book
   xp-granted:
     - apprentice 1
   cost:
     - book 1
     - levels 5
-    - skeleton_skull 1
+    - skeleton-skull 1
     - bone 13
   memory:  5
   quest-modifiers:
@@ -148,7 +148,7 @@ lore_of_death:
   require-cast-item-on-command: true
   bindable: false
   items:
-    - death_grimoire 1
+    - death-grimoire 1
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
@@ -165,28 +165,28 @@ lore_of_death:
       effect: sound
       sound: mob.ghast.scream
 
-lore_of_dragons:
+lore-of-dragons:
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: enchanted_book
+  spell-icon: enchanted-book
   xp-granted:
     - apprentice 1
   cost:
     - book 1
     - levels 5
-    - popped_chorus_fruit 5
-    - dragon_breath 1
+    - popped-chorus-fruit 5
+    - dragon-breath 1
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
-    - biome THE_END required
+    - biome THE-END required
   quest-triggers:
     - craft book
   require-cast-item-on-command: true
   bindable: false
   items:
-    - dragon_grimoire 1
+    - dragon-grimoire 1
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
@@ -196,16 +196,16 @@ lore_of_dragons:
     Create a Dragon grimoire.
 
 
-lore_of_flame:
+lore-of-flame:
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: "enchanted_book"
+  spell-icon: "enchanted-book"
   xp-granted:
     - apprentice 1
   cost:
     - book 1
     - levels 5
-    - blaze_rod 5
+    - blaze-rod 5
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
@@ -213,7 +213,7 @@ lore_of_flame:
   quest-triggers:
     - craft book
   items:
-    - fire_grimoire 1
+    - fire-grimoire 1
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
@@ -224,17 +224,17 @@ lore_of_flame:
     &4Lore of Flame: Fire Masters' Spell
     Creates a fiery grimoire.
 
-lore_of_hydromancy:
+lore-of-hydromancy:
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: "enchanted_book"
+  spell-icon: "enchanted-book"
   xp-granted:
     - apprentice 1
   cost:
     - levels 5
     - book 1
-    - prismarine_crystals 5
+    - prismarine-crystals 5
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
@@ -244,7 +244,7 @@ lore_of_hydromancy:
   require-cast-item-on-command: true
   bindable: false
   items:
-    - hydro_grimoire
+    - hydro-grimoire
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
@@ -253,26 +253,26 @@ lore_of_hydromancy:
     &1Lore of Water: 5 Memory Spell
     Create a grimoire of Hydromantic lore.
 
-lore_of_knighthood:
+lore-of-knighthood:
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: enchanted_book
+  spell-icon: enchanted-book
   xp-granted:
     - apprentice 1
   cost:
     - levels 5
     - book 1
-    - iron_block 5
+    - iron-block 5
   memory: 5
   quest-triggers:
-    - craft IRON_BLOCK
+    - craft IRON-BLOCK
   quest-modifiers:
     - magicxpabove novice:5000 required
   require-cast-item-on-command: true
   bindable: false
   items:
-    - knight_grimoire 1
+    - knight-grimoire 1
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
@@ -280,11 +280,11 @@ lore_of_knighthood:
     &1Lore of Knighthood: 5 Memory Spell
     Create a manual of Heraldric lore.
 
-lore_of_the_rock:
+lore-of-the-rock:
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: enchanted_book
+  spell-icon: enchanted-book
   xp-granted:
     - apprentice 1
   cost:
@@ -295,12 +295,12 @@ lore_of_the_rock:
   quest-modifiers:
     - magicxpabove novice:5000 required
     - lightlevelbelow 5 required
-    - variablelessthan meta_location_y:30 required
+    - variablelessthan meta-location-y:30 required
     - outside denied
   require-cast-item-on-command: true
   bindable: false
   items:
-    - stone_grimoire
+    - stone-grimoire
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
@@ -309,17 +309,17 @@ lore_of_the_rock:
     &2Stone Lore: 5 Memory Spell
     Create a tablet etched with secrets of stone.
 
-lore_of_shadow:
+lore-of-shadow:
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: enchanted_book
+  spell-icon: enchanted-book
   xp-granted:
     - apprentice 1
   cost:
     - book 1
     - levels 5
-    - ink_sac 5
+    - ink-sac 5
   memory: 5
   quest-triggers:
     - craft book
@@ -329,7 +329,7 @@ lore_of_shadow:
   require-cast-item-on-command: true
   bindable: false
   items:
-    - shadow_grimoire 1
+    - shadow-grimoire 1
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Shadow MagicXP to cast this spell. Do /magicxp"
@@ -338,10 +338,10 @@ lore_of_shadow:
     &7Lore of Shadow: 5 Memory Spell
     Create a magical book of Shadow knowledge.
 
-lore_of_storms:
+lore-of-storms:
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: enchanted_book
+  spell-icon: enchanted-book
   bindable: false
   xp-granted:
     - storm 1
@@ -357,7 +357,7 @@ lore_of_storms:
   quest-triggers:
     - craft book
   items:
-    - storm_grimoire 1
+    - storm-grimoire 1
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
@@ -366,11 +366,11 @@ lore_of_storms:
     &9Lore of Storms: 5 Memory Spell
     Creates a guide of storm magic.
 
-lore_of_the_sun:
+lore-of-the-sun:
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: book
-  spell-icon: enchanted_book
+  spell-icon: enchanted-book
   xp-granted:
     - apprentice 1
   bindable: false
@@ -378,7 +378,7 @@ lore_of_the_sun:
   cost:
     - levels 5
     - book 1
-    - gold_block 1
+    - gold-block 1
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
@@ -387,7 +387,7 @@ lore_of_the_sun:
   quest-triggers:
     - craft book
   items:
-    - sun_grimoire
+    - sun-grimoire
   modifiers:
     - magicxpabove novice:5000 required
   str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"

@@ -5,15 +5,15 @@ bloom:
   spell-class: ".targeted.FarmSpell"
   always-granted: true
   cast-item: stick
-  spell-icon: wheat_seeds
+  spell-icon: wheat-seeds
   xp-granted:
     - novice 1
   memory: 3
   quest:
-    - variable meta_statistic_use_item_WHEAT_SEEDS 300
+    - variable meta-statistic-use-item-WHEAT-SEEDS 300
   cost:
     - mana 30
-    - wheat_seeds 30
+    - wheat-seeds 30
   cooldown: 30
   growth: 2
   radius: 16
@@ -28,42 +28,42 @@ bloom:
     huzzah:
       effect: Particles
       position: special
-      particle: VILLAGER_HAPPY
+      particle: VILLAGER-HAPPY
       offset: 0.5,0.75,0.5
 
 forage:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
-  cast-item: stick, forest_sickle
+  cast-item: stick, forest-sickle
   spell-icon: apple
   xp-granted:
     - novice 1
   cost:
     - mana 30
-    - wheat_seeds 30
+    - wheat-seeds 30
   cooldown: 0.5
   memory: 3
   quest:
-    - variable meta_statistic_use_item_APPLE 30
-    - variable meta_statistic_use_item_BEETROOT 30
-    - variable meta_statistic_use_item_CARROT 30
-    - variable meta_statistic_use_item_DRIED_KELP 30
-    - variable meta_statistic_use_item_MELON_SLICE 30
-    - variable meta_statistic_use_item_POTATO 30
-    - variable meta_statistic_use_item_SWEET_BERRIES 30
+    - variable meta-statistic-use-item-APPLE 30
+    - variable meta-statistic-use-item-BEETROOT 30
+    - variable meta-statistic-use-item-CARROT 30
+    - variable meta-statistic-use-item-DRIED-KELP 30
+    - variable meta-statistic-use-item-MELON-SLICE 30
+    - variable meta-statistic-use-item-POTATO 30
+    - variable meta-statistic-use-item-SWEET-BERRIES 30
   calculate-drops-individually: false
   power-affects-quantity: true
   items:
     - wheat 1-6 30%
     - apple 2-6 25%
-    - brown_mushroom 1-4 15%
-    - red_mushroom 1-2 7%
+    - brown-mushroom 1-4 15%
+    - red-mushroom 1-2 7%
     - pumpkin 1 6%
     - melon 1 5%
     - egg 1 12%
   modifiers:
-    - Holding forest_sickle power 2.5
-    - Biome FOREST,PLAINS,BIRCH_FOREST,BIRCH_FOREST_HILLS,JUNGLE_HILLS,JUNGLE_EDGE required
+    - Holding forest-sickle power 2.5
+    - Biome FOREST,PLAINS,BIRCH-FOREST,BIRCH-FOREST-HILLS,JUNGLE-HILLS,JUNGLE-EDGE required
     - ElevationAbove 62 required
   str-cost: "30 mana and 30 seeds."
   str-modifier-failed: "This is not good foraging terrain."
@@ -78,7 +78,7 @@ gate:
   spell-class: ".instant.GateSpell"
   can-cast-by-command: true
   cast-item: wand
-  spell-icon: filled_map
+  spell-icon: filled-map
   xp-granted:
     - novice 1
   cost:
@@ -100,8 +100,8 @@ gate:
 haste:
   permission-name: novice
   spell-class: ".buff.HasteSpell"
-  cast-item: stick,forest_wand
-  spell-icon: gold_boots
+  cast-item: stick,forest-wand
+  spell-icon: gold-boots
   xp-granted:
     - novice 1
   cost:
@@ -144,7 +144,7 @@ leap:
   always-granted: true
   cast-item: stick,wand
   can-cast-by-command: true
-  spell-icon: diamond_boots
+  spell-icon: diamond-boots
   xp-granted:
     - novice 1
   cost:
@@ -172,20 +172,20 @@ leap:
 lifewalk:
   permission-name: novice
   spell-class: ".buff.LifewalkSpell"
-  cast-item: stick,forest_sickle
+  cast-item: stick,forest-sickle
   spell-icon: dandelion
   xp-granted:
     - novice 1
   cost:
     - mana 20
-    - wheat_seeds 20
+    - wheat-seeds 20
   memory: 2
   quest:
-    - variable meta_statistic_use_item_OAK_SAPLING 200
+    - variable meta-statistic-use-item-OAK-SAPLING 200
   bindable: false
   use-cost:
     - mana 2
-    - wheat_seeds 2
+    - wheat-seeds 2
   use-cost-interval: 10
   str-cost: "20 mana and 20 wheat seeds, plus 2 mana and 2 wheat seeds every 10 steps."
   str-cast-self: "Flowers spring up in your footsteps."
@@ -206,10 +206,10 @@ mark:
   cost:
     - mana 75
     - redstone 5
-    - iron_ingot 5
+    - iron-ingot 5
   memory: 3
   quest:
-    - variable meta_statistic_sleep_in_bed 1
+    - variable meta-statistic-sleep-in-bed 1
   str-cost: 75 mana, 5 redstone dust and 5 iron bars
   str-cast-self: You have marked your location.
   description: |
@@ -223,7 +223,7 @@ recall:
   cast-item: wand
   can-cast-by-command: true
   allow-cross-world: false
-  spell-icon: red_bed
+  spell-icon: red-bed
   memory: 3
   bindable: false
   xp-granted:
@@ -231,7 +231,7 @@ recall:
   cost:
     - mana 30
   quest:
-    - variable meta_statistic_sleep_in_bed 1
+    - variable meta-statistic-sleep-in-bed 1
   cooldown: 120
   shared-cooldowns:
     - summon 120

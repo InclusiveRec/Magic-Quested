@@ -14,7 +14,7 @@ storm:
   ritual-duration: 400
   cost:
     - mana 80
-    - storm_amalgam 8
+    - storm-amalgam 8
   memory: 8
   quest:
     - kill creeper 8
@@ -29,7 +29,7 @@ storm:
   need-spell-to-participate: false
   modifiers:
     - outside required
-    - inblock white_wool required
+    - inblock white-wool required
     - magicxpabove apprentice:8000 required
     - magicxpabove novice:80000 required
   charge-reagents-immediately: true

@@ -6,22 +6,22 @@ blink:
   permission-name: apprentice
   spell-class: ".targeted.BlinkSpell"
   name: blink
-  spell-icon: ender_pearl
+  spell-icon: ender-pearl
   description: Teleport a short distance.
-  cast-item: stick, scaled_compass
+  cast-item: stick, scaled-compass
   memory: 4
   quest:
-    - variable meta_statistic_use_item_ENDERPEARL 40
+    - variable meta-statistic-use-item-ENDERPEARL 40
   cost:
     - mana 40
-    - spider_eye 4
+    - spider-eye 4
   range: 40
   pass-through-ceiling: false
   smoke-trail: true
   modifiers:
     - MagicXpAbove novice:4000 required
     - holding stormhammer power 2
-  str-cost: 40 mana and 4 spider_eye
+  str-cost: 40 mana and 4 spider-eye
   str-cast-self: You blink away!
   str-cast-others: "%a blinks away!"
   str-cant-blink: You cannot blink there.
@@ -36,7 +36,7 @@ blink:
 freeze:
   permission-name: apprentice
   spell-class: ".instant.FreezeSpell"
-  cast-item: water_focus,stick
+  cast-item: water-focus,stick
   spell-icon: snowball
   xp-granted:
     - apprentice 1
@@ -46,7 +46,7 @@ freeze:
     - snowball 1
   memory: 5
   quest:
-    - variable meta_statistic_use_item_SNOWBALL 50
+    - variable meta-statistic-use-item-SNOWBALL 50
   cooldown: 3
   damage: 2
   horizontal-spread: 15
@@ -56,8 +56,8 @@ freeze:
   spell-power-affects-range: true
   vertical-spread: 5
   modifiers:
-    - onblock snow,ice,packed_ice,blue_ice power 2
-    - holding hydromantic__focus cooldown 0.2
+    - onblock snow,ice,packed-ice,blue-ice power 2
+    - holding hydromantic--focus cooldown 0.2
   str-cost: "50 mana and a snowball."
   str-on-cooldown: ""
   description: |
@@ -104,7 +104,7 @@ lightning:
   permission-name: apprentice
   spell-class: ".targeted.LightningSpell"
   cast-item: stormhammer
-  spell-icon: gold_sword
+  spell-icon: gold-sword
   xp-granted:
     - apprentice 1
     - novice 1
@@ -114,7 +114,7 @@ lightning:
   cooldown: 10
   memory: 6
   quest:
-    - variable meta_statistic_use_item_FLINT_AND_STEEL 6
+    - variable meta-statistic-use-item-FLINT-AND-STEEL 6
   quest-modifiers:
     - magicxpabove novice:6000 required
     - outside required
@@ -142,7 +142,7 @@ windwalk:
   permission-name: apprentice
   spell-class: ".buff.WindwalkSpell"
   cast-item: stormhammer, stick
-  spell-icon: diamond_boots
+  spell-icon: diamond-boots
   xp-granted:
     - apprentice 1
     - novice 1

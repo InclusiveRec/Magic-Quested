@@ -3,24 +3,24 @@
 
 predefined-items:
 
-  fauna_amalgam:
-    type: brown_dye
+  fauna-amalgam:
+    type: brown-dye
     name: "&2Animalia Essence"
     lore:
       - "Created from fusing animal pelts and an egg."
       - "Thank goodness there's no poop in here."
       - "This is amalgam, not fertilizer. (Eww...)"
 
-  flame_amalgam:
-    type: red_dye
+  flame-amalgam:
+    type: red-dye
     name: "&4Molten Mass"
     lore:
       - "A glowing mass that radiates a low heat."
       - "It feels connected with the core of the world."
       - "Storing on wooden shelves is not advised."
 
-  flora_amalgam:
-    type: green_dye
+  flora-amalgam:
+    type: green-dye
     name: "&2Herbal Compound"
     lore:
       - "Ferns and seagrass do not mix well on their own."
@@ -28,31 +28,31 @@ predefined-items:
       - "No flowers here.  What are you wanting?  Medicine?"
 
   mortar:
-    type: gray_dye
+    type: gray-dye
     name: "&8Mortar"
     lore:
       - "The glue for many a stone structure."
       - "I wonder why dirt is used and not sand?"
       - "Good for spreading on bricks, not bread."
 
-  hydro_amalgam:
-    type: blue_dye
+  hydro-amalgam:
+    type: blue-dye
     name: "&4Slush Ball"
     lore:
       - "A lump of crushed ice and water."
       - "Cold to the touch and occasionally drips."
       - "Too bad mana isn't good to ingest.  For now."
 
-  sun_amalgam:
-    type: yellow_dye
+  sun-amalgam:
+    type: yellow-dye
     name: "&eGilded Paste"
     lore:
       - "Mixing sunflowers and gold results in a weird"
       - "paste which shines in the light of the sun."
       - "SPF Protection: -100"
 
-  storm_amalgam:
-    type: light_gray_dye
+  storm-amalgam:
+    type: light-gray-dye
     name: "&7Cloud Puff"
     lore:
       - "Eletrifying the water immediately vaporized it."
@@ -63,42 +63,42 @@ predefined-items:
 #Amalgam creation spells
 
 
-beastial_amalgam:
+beastial-amalgam:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
-  cast-item: stick, forest_sickle
-  spell-icon: brown_dye
+  cast-item: stick, forest-sickle
+  spell-icon: brown-dye
   xp-granted:
     - novice 1
   cost:
     - mana 10
     - leather 1
-    - rabbit_hide 1
+    - rabbit-hide 1
     - egg 1
   memory: 1
   quest:
     - egg 1
     - leather 1
-    - rabbit_hide 1
+    - rabbit-hide 1
   quest-consume: false
   items:
-    - fauna_amalgam 2
+    - fauna-amalgam 2
   str-cost: "10 mana, an egg, leather, and rabbit hide."
   description: |
     &2Herbal Amalgam: 1 Memory Spell
     Prepare a fauna amalgam.
 
-botanical_amalgam:
+botanical-amalgam:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
-  cast-item: stick, forest_sickle
-  spell-icon: green_dye
+  cast-item: stick, forest-sickle
+  spell-icon: green-dye
   xp-granted:
     - novice 1
   cost:
     - mana 10
     - fern 1
-    - sugar_cane 1
+    - sugar-cane 1
     - seagrass 1
   memory: 1
   quest:
@@ -107,30 +107,30 @@ botanical_amalgam:
     - seagrass 1
   quest-consume: false
   items:
-    - flora_amalgam 3
+    - flora-amalgam 3
   str-cost: "10 mana, a fern, sugar cane, and seagrass."
   description: |
     &2Herbal Amalgam: 1 Memory Spell
     Prepare a flora amalgam.
 
-fire_amalgam:
+fire-amalgam:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
-  cast-item: stick, fire_staff
-  spell-icon: red_dye
+  cast-item: stick, fire-staff
+  spell-icon: red-dye
   xp-granted:
     - novice 1
   memory: 1
   quest:
     - netherrack 1
-    - lava_bucket 1
+    - lava-bucket 1
   quest-consume: false
   items:
-    - flame_amalgam 1
+    - flame-amalgam 1
     - bucket 1
   cost:
     - mana 10
-    - lava_bucket 1
+    - lava-bucket 1
     - netherrack 1
   modifiers:
     - outside required
@@ -140,41 +140,41 @@ fire_amalgam:
     &eFire Amalgam: 1 Memory Spell
     Mixes some Flame Amalgam.
 
-hydro_amalgam:
+hydro-amalgam:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
-  cast-item: stick, water_rod
-  spell-icon: blue_dye
+  cast-item: stick, water-rod
+  spell-icon: blue-dye
   xp-granted:
     - novice 1
   cost:
     - mana 10
     - ice 1
-    - water_bucket 1
+    - water-bucket 1
   memory: 1
   quest:
     - ice 1
   quest-consume: false
   items:
-    - hydro_amalgam 1
+    - hydro-amalgam 1
     - bucket 1
   str-cost: "Combine ice and a bucket of water."
   description: |
     &eHydro Amalgam: 1 Memory Spell
     Mixes some Hydro Amalgam.
 
-mix_mortar:
+mix-mortar:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
-  spell-icon: gray_dye
+  spell-icon: gray-dye
   xp-granted:
     - novice 1
-  cast-item: stick, iron_trowel
+  cast-item: stick, iron-trowel
   cost:
     - mana 10
     - dirt 3
     - clay 1
-    - water_bucket 2
+    - water-bucket 2
   cooldown: 1
   memory: 1
   quest:
@@ -185,7 +185,7 @@ mix_mortar:
     - mortar 4
     - bucket 2
   modifiers:
-    - holding iron_shovel|&8Mason's_Trowel power 3
+    - holding iron-shovel|&8Mason's-Trowel power 3
   power-affects-quantity: true
   str-cost: "Mix 3 parts dirt with 1 part clay and 2 buckets of water."
   str-on-cooldown: ""
@@ -193,35 +193,35 @@ mix_mortar:
     &rMix Mortar  1 Memory Spell
     &3Mixes mortar out of raw materials.
 
-solar_amalgam:
+solar-amalgam:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
-  cast-item: stick, forest_sickle
-  spell-icon: yellow_dye
+  cast-item: stick, forest-sickle
+  spell-icon: yellow-dye
   xp-granted:
     - novice 1
   memory: 1
   quest:
     - sunflower 1
-    - gold_nugget 1
+    - gold-nugget 1
   quest-consume: false
   cost:
     - mana 10
-    - gold_nugget 1
+    - gold-nugget 1
     - sunflower 1
   items:
-    - sun_amalgam 2
+    - sun-amalgam 2
   str-cost: "Combine a sunflower and gold nugget."
   description: |
     &eSolar Amalgam: 1 Memory Solar Spell
     Mixes a solar amalgam.
 
 
-storm_amalgam:
+storm-amalgam:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
   cast-item: stormhammer, stick
-  spell-icon: light_gray_dye
+  spell-icon: light-gray-dye
   xp-granted:
     - novice 1
   memory: 1
@@ -229,10 +229,10 @@ storm_amalgam:
     - flintandsteel 1
   quest-consume: false
   items:
-    - storm_amalgam 4-6
-    - glass_bottle 1
+    - storm-amalgam 4-6
+    - glass-bottle 1
   cost:
-    - flint_and_steel 1
+    - flint-and-steel 1
     - potion 1
     - mana 10
   modifiers:

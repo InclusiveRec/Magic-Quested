@@ -9,8 +9,8 @@ general:
     strManaPotionOnCooldown: You cannot use another mana potion yet.
     manaPotionCooldown: 30
     manaPotions:
-      - lapis_lazuli 100
-      - glowstone_dust 60
+      - lapis-lazuli 100
+      - glowstone-dust 60
       - redstone 30
     enableManaBars: true
   castitems:
@@ -37,7 +37,7 @@ general:
     missingReagents: You do not have the required reagents for that spell.
   chat:
     broadcastRange: 20
-    textColor: 'DARK_AQUA'
+    textColor: 'DARK-AQUA'
   display:
     useExpBarAsCastTimeBar: true
     soundFailOnCooldown: null

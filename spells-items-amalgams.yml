@@ -174,8 +174,8 @@ mix_mortar:
         - mortar 4
         - bucket 2
     modifiers:
-        - holding 256|&8Mason's_Trowel  
-        #TODO I'd like using the cast item to give 3 times as much mortar as using a stick
+        - holding 256|&8Mason's_Trowel power 3
+    power-affects-quantity: true
     str-cost: "Mix 3 parts dirt with 1 part clay and 2 buckets of water."
     str-on-cooldown: ""
     description: |

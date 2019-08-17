@@ -20,7 +20,7 @@ blink:
   smoke-trail: true
   modifiers:
     - MagicXpAbove novice:4000 required
-	- holding stormhammer power 2
+    - holding stormhammer power 2
   str-cost: 40 mana and 4 spider_eye
   str-cast-self: You blink away!
   str-cast-others: "%a blinks away!"

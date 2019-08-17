@@ -113,7 +113,7 @@ lore-of-botany:
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
-    - biome FOREST required
+    - biome forest required
   quest-triggers:
     - craft book
   require-cast-item-on-command: true
@@ -180,7 +180,7 @@ lore-of-dragons:
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
-    - biome THE-END required
+    - biome the-end required
   quest-triggers:
     - craft book
   require-cast-item-on-command: true
@@ -209,7 +209,7 @@ lore-of-flame:
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
-    - biome NETHER required
+    - biome nether required
   quest-triggers:
     - craft book
   items:
@@ -238,7 +238,7 @@ lore-of-hydromancy:
   memory: 5
   quest-modifiers:
     - magicxpabove novice:5000 required
-    - biome OCEAN required
+    - biome ocean required
   quest-triggers:
     - craft book
   require-cast-item-on-command: true
@@ -266,7 +266,7 @@ lore-of-knighthood:
     - iron-block 5
   memory: 5
   quest-triggers:
-    - craft IRON-BLOCK
+    - craft iron-block
   quest-modifiers:
     - magicxpabove novice:5000 required
   require-cast-item-on-command: true
@@ -383,7 +383,7 @@ lore-of-the-sun:
   quest-modifiers:
     - magicxpabove novice:5000 required
     - outside required
-    - biome DESERT required
+    - biome desert required
   quest-triggers:
     - craft book
   items:

@@ -16,7 +16,7 @@ storm:
     - mana 80
     - storm-amalgam 8
   memory: 8
-  quest:
+  quest-triggers:
     - kill creeper 8
   quest-modifiers:
     - magicxpabove novice:80000 required

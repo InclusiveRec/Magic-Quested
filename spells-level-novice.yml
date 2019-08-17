@@ -10,7 +10,7 @@ bloom:
     - novice 1
   memory: 3
   quest:
-    - variable meta-statistic-use-item-WHEAT-SEEDS 300
+    - variable meta-statistic-use-item-wheat-seeds 300
   cost:
     - mana 30
     - wheat-seeds 30
@@ -44,13 +44,13 @@ forage:
   cooldown: 0.5
   memory: 3
   quest:
-    - variable meta-statistic-use-item-APPLE 30
-    - variable meta-statistic-use-item-BEETROOT 30
-    - variable meta-statistic-use-item-CARROT 30
-    - variable meta-statistic-use-item-DRIED-KELP 30
-    - variable meta-statistic-use-item-MELON-SLICE 30
-    - variable meta-statistic-use-item-POTATO 30
-    - variable meta-statistic-use-item-SWEET-BERRIES 30
+    - variable meta-statistic-use-item-apple 30
+    - variable meta-statistic-use-item-beetroot 30
+    - variable meta-statistic-use-item-carrot 30
+    - variable meta-statistic-use-item-dried-kelp 30
+    - variable meta-statistic-use-item-melon-slice 30
+    - variable meta-statistic-use-item-potato 30
+    - variable meta-statistic-use-item-sweet-berries 30
   calculate-drops-individually: false
   power-affects-quantity: true
   items:
@@ -181,7 +181,7 @@ lifewalk:
     - wheat-seeds 20
   memory: 2
   quest:
-    - variable meta-statistic-use-item-OAK-SAPLING 200
+    - variable meta-statistic-use-item-oak-sapling 200
   bindable: false
   use-cost:
     - mana 2

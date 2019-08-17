@@ -11,7 +11,7 @@ blink:
   cast-item: stick, scaled-compass
   memory: 4
   quest:
-    - variable meta-statistic-use-item-ENDERPEARL 40
+    - variable meta-statistic-use-item-enderpearl 40
   cost:
     - mana 40
     - spider-eye 4
@@ -46,7 +46,7 @@ freeze:
     - snowball 1
   memory: 5
   quest:
-    - variable meta-statistic-use-item-SNOWBALL 50
+    - variable meta-statistic-use-item-snowball 50
   cooldown: 3
   damage: 2
   horizontal-spread: 15
@@ -57,7 +57,7 @@ freeze:
   vertical-spread: 5
   modifiers:
     - onblock snow,ice,packed-ice,blue-ice power 2
-    - holding hydromantic--focus cooldown 0.2
+    - holding water-focus cooldown 0.2
   str-cost: "50 mana and a snowball."
   str-on-cooldown: ""
   description: |
@@ -114,7 +114,7 @@ lightning:
   cooldown: 10
   memory: 6
   quest:
-    - variable meta-statistic-use-item-FLINT-AND-STEEL 6
+    - variable meta-statistic-use-item-flint-and-steel 6
   quest-modifiers:
     - magicxpabove novice:6000 required
     - outside required

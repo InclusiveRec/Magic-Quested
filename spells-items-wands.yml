@@ -152,7 +152,7 @@ bone-carving:
     - mana 50
   memory: 5
   quest:
-    - variable meta-statistic-kill-entity-HUSK 5
+    - variable meta-statistic-kill-entity-husk 5
   quest-modifiers:
     - magicxpabove novice:5000 required
   require-cast-item-on-command: true
@@ -215,7 +215,7 @@ dragon-compass:
     - craft compass
   quest-modifiers:
     - magicxpabove novice:5000 required
-    - biome end required
+    - biome the-end required
   require-cast-item-on-command: true
   items:
     - dragon-sphere 1

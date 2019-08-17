@@ -45,8 +45,8 @@ freeze:
         - mana 50
         - snow_ball 1
     memory: 5
-  quest:
-    - variable meta_statistic_use_item_SNOWBALL 50
+    quest:
+        - variable meta_statistic_use_item_SNOWBALL 50
     cooldown: 3
     damage: 2
     horizontal-spread: 15
@@ -93,7 +93,7 @@ gust:
     modifiers:
         - outside continue
         - storm power 2
-		- holding stormhammer power 2
+	- holding stormhammer power 2
     description: |
         &rGust   4 Memory School
         &3With a flick of the wrist, the mage blows their enemies away.
@@ -120,8 +120,8 @@ lightning:
     - variable meta_statistic_use_item_FLINT_AND_STEEL 6
     quest-modifiers:
         - magicxpabove novice:6000 required
-	    - outside required
-	    - storm required
+	- outside required
+	- storm required
     range: 20
     check-plugins: true
     obey-los: true
@@ -162,8 +162,8 @@ windwalk:
     - fly
     quest-modifiers:
         - magicxpabove novice:4000 required
-	    - outside required
-	    - storm required
+	- outside required
+	- storm required
     fly-speed: 0.3
     launch-speed: 5
     requires: storm

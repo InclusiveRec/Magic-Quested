@@ -24,6 +24,7 @@ blink:
   modifiers:
     - MagicXpAbove novice:4000 required
     - holding stormhammer power 2
+  str-modifier-failed: "You need 4000 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: 40 mana and 4 spider-eye
   str-cast-self: You blink away!
   str-cast-others: "%a blinks away!"
@@ -36,7 +37,7 @@ blink:
       position: pos2
       effect: EnderSignal
 
-freeze:
+freeze: 
   permission-name: apprentice
   spell-class: ".instant.FreezeSpell"
   cast-item: water-focus,stick
@@ -59,8 +60,10 @@ freeze:
   spell-power-affects-range: true
   vertical-spread: 5
   modifiers:
+    - magicxpabove novice:5000 required
     - onblock snow,ice,packed-ice,blue-ice power 2
     - holding water-focus cooldown 0.2
+  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "50 mana and a snowball."
   str-on-cooldown: ""
   description: |
@@ -68,7 +71,7 @@ freeze:
     Blast forth a flurry of icy shards which damage and slow all in their path.
   effects: #TODO
 
-gust:
+gust: 
   permission-name: apprentice
   spell-class: ".instant.ForcepushSpell"
   cast-item: stormhammer, stick
@@ -91,9 +94,11 @@ gust:
     - outside required
     - storm required
   modifiers:
+    - magicxpabove novice:4000 required
     - outside continue
     - storm power 2
     - holding stormhammer power 2
+  str-modifier-failed: "You need 4000 Novice MagicXP to cast this spell. Do /magicxp"
   description: |
     &rGust   4 Memory School
     &3With a flick of the wrist, the mage blows their enemies away.
@@ -101,7 +106,7 @@ gust:
   str-cost: "40 mana and a feather"
   str-cast-others: "%a blows a powerful gust of wind!"
   str-cast-self: You blow a powerful wind gust at your enemies!
-  effects: #TODO
+  effects: #TODO Whoosh sound
 
 lightning:
   permission-name: apprentice
@@ -128,9 +133,11 @@ lightning:
   require-entity-target: false
   spell-power-affects-range: true
   modifiers:
+    - magicxpabove novice:6000 required
     - outside required
     - storm required
     - holding stormhammer power 2.5
+  str-modifier-failed: "You need 6000 Novice MagicXP to cast this spell. Do /magicxp"
   description: |
     &rLightning   6 Memory School
     &3The mage calls down single lightning bolt.
@@ -167,9 +174,11 @@ windwalk:
   launch-speed: 5
   use-cost-interval: 5
   modifiers:
+    - MagicXpAbove novice:4000 required
     - storm required
     - outside required
     - holding stormhammer power 2
+  str-modifier-failed: "You need 4000 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: 40 mana and two feathers initially; 20 mana and a feather every 5 seconds thereafter.
   str-cast-self: You rise up into the stormy sky!
   str-cast-others: "%a rises up into the stormy sky!"
@@ -179,25 +188,26 @@ windwalk:
     The caster rides the winds of a raging storm.
     
 enderchest:
-    permission-name: apprentice
-    spell-class: ".instant.EnderchestSpell"
-    cast-item: book
-    spell-icon: ender_chest
-    xp-granted:
-        - apprentice 1
-        - novice 1
-    memory: 4
-    quest:
+  permission-name: apprentice
+  spell-class: ".instant.EnderchestSpell"
+  cast-item: book
+  spell-icon: ender_chest
+  xp-granted:
+    - apprentice 1
+    - novice 1
+  memory: 4
+  quest:
         - variable meta_statistic_use_item_ENDERCHEST 
-    quest-modifiers:
-        - magicxpabove novice:4000 required
-    cost:
-        - mana 40
-        - enderpearl 1
-    modifiers:
-        - MagicXpAbove novice:4000 required
-    cooldown: 300
-    str-cost: "50 mana and an enderpearl."
-    description: |
-        &rEnderchest: 4 Memory Spell
-        &3Opens your ender chest inventory.
+  quest-modifiers:
+    - magicxpabove novice:4000 required
+  cost:
+    - mana 40
+    - enderpearl 1
+  modifiers:
+    - MagicXpAbove novice:4000 required
+  str-modifier-failed: "You need 4000 Novice MagicXP to cast this spell. Do /magicxp"
+  cooldown: 300
+  str-cost: "50 mana and an enderpearl."
+  description: |
+    &rEnderchest: 4 Memory Spell
+    &3Opens your ender chest inventory.

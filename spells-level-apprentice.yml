@@ -7,6 +7,9 @@ blink:
   spell-class: ".targeted.BlinkSpell"
   name: blink
   spell-icon: ender-pearl
+  xp-granted:
+    - apprentice 1
+    - novice 1
   description: Teleport a short distance.
   cast-item: stick, scaled-compass
   memory: 4
@@ -14,7 +17,7 @@ blink:
     - variable meta-statistic-use-item-ender-pearl 40
   cost:
     - mana 40
-    - spider-eye 4
+    - string 4
   range: 40
   pass-through-ceiling: false
   smoke-trail: true
@@ -174,3 +177,27 @@ windwalk:
   description: |
     &rWindwalk   4 Memory Spell
     The caster rides the winds of a raging storm.
+    
+enderchest:
+    permission-name: apprentice
+    spell-class: ".instant.EnderchestSpell"
+    cast-item: book
+    spell-icon: ender_chest
+    xp-granted:
+        - apprentice 1
+        - novice 1
+    memory: 4
+    quest:
+        - variable meta_statistic_use_item_ENDERCHEST 
+    quest-modifiers:
+        - magicxpabove novice:4000 required
+    cost:
+        - mana 40
+        - enderpearl 1
+    modifiers:
+        - MagicXpAbove novice:4000 required
+    cooldown: 300
+    str-cost: "50 mana and an enderpearl."
+    description: |
+        &rEnderchest: 4 Memory Spell
+        &3Opens your ender chest inventory.

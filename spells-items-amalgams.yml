@@ -27,12 +27,11 @@ predefined-items:
       - "Sugar cane works as a binder for these plants."
       - "No flowers here.  What are you wanting?  Medicine?"
 
-  mortar:
+  grout:
     type: gray-dye
-    name: "&8Mortar"
+    name: "&8Grout"
     lore:
       - "The glue for many a stone structure."
-      - "I wonder why dirt is used and not sand?"
       - "Good for spreading on bricks, not bread."
 
   hydro-amalgam:
@@ -163,7 +162,7 @@ hydro-amalgam:
     &eHydro Amalgam: 1 Memory Spell
     Mixes some Hydro Amalgam.
 
-mix-mortar:
+mix-grout:
   permission-name: novice
   spell-class: ".instant.ConjureSpell"
   spell-icon: gray-dye
@@ -172,26 +171,26 @@ mix-mortar:
   cast-item: stick, iron-trowel
   cost:
     - mana 10
-    - dirt 3
+    - sand 3
     - clay 1
-    - water-bucket 2
+    - water-bucket 1
   cooldown: 1
   memory: 1
   quest:
-    - dirt 1
+    - sand 1
     - clayball 1
   quest-consume: false
   items:
-    - mortar 4
+    - grout 4
     - bucket 2
   modifiers:
     - holding iron-shovel|&8Mason's-Trowel power 3 #TODO Change to cast item
   power-affects-quantity: true
-  str-cost: "Mix 3 parts dirt with 1 part clay and 2 buckets of water."
+  str-cost: "Mix 3 parts sand with 1 part clay and a bucket of water."
   str-on-cooldown: ""
   description: |
-    &rMix Mortar  1 Memory Spell
-    &3Mixes mortar out of raw materials.
+    &rMix Grout  1 Memory Spell
+    &3Mixes grout out of raw materials.
 
 solar-amalgam:
   permission-name: novice

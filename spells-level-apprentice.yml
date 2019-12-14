@@ -1,4 +1,4 @@
-# Apprentice spells are memory levels 4-6, require NoviceXP 1000x their memory level. 
+# Apprentice spells are memory levels 4-6, require NoviceXP 100x their memory level. 
 # Cast Item: either a stick (or command) or more powerfully with a specific cast item.
 
 
@@ -9,7 +9,6 @@ blink:
   spell-icon: ender-pearl
   xp-granted:
     - apprentice 1
-    - novice 1
   description: Teleport a short distance.
   cast-item: stick, scaled-compass
   memory: 4
@@ -22,9 +21,9 @@ blink:
   pass-through-ceiling: false
   smoke-trail: true
   modifiers:
-    - MagicXpAbove novice:4000 required
+    - MagicXpAbove novice:400 required
     - holding stormhammer power 2
-  str-modifier-failed: "You need 4000 Novice MagicXP to cast this spell. Do /magicxp"
+  str-modifier-failed: "You need 400 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: 40 mana and 4 spider-eye
   str-cast-self: You blink away!
   str-cast-others: "%a blinks away!"
@@ -44,7 +43,6 @@ freeze:
   spell-icon: snowball
   xp-granted:
     - apprentice 1
-    - novice 1
   cost:
     - mana 50
     - snowball 1
@@ -60,10 +58,10 @@ freeze:
   spell-power-affects-range: true
   vertical-spread: 5
   modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
     - onblock snow,ice,packed-ice,blue-ice power 2
     - holding water-focus cooldown 0.2
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "50 mana and a snowball."
   str-on-cooldown: ""
   description: |
@@ -90,11 +88,11 @@ gust:
   quest-triggers:
     - givedamage feather
   quest-modifiers:
-    - magicxpabove novice:4000 required
+    - magicxpabove novice:400 required
     - outside required
     - storm required
   modifiers:
-    - magicxpabove novice:4000 required
+    - magicxpabove novice:400 required
     - outside continue
     - storm power 2
     - holding stormhammer power 2
@@ -115,7 +113,6 @@ lightning:
   spell-icon: gold-sword
   xp-granted:
     - apprentice 1
-    - novice 1
   cost:
     - mana 60
     - whitewool 1
@@ -137,7 +134,7 @@ lightning:
     - outside required
     - storm required
     - holding stormhammer power 2.5
-  str-modifier-failed: "You need 6000 Novice MagicXP to cast this spell. Do /magicxp"
+  str-modifier-failed: "You need 600 Novice MagicXP to cast this spell. Do /magicxp"
   description: |
     &rLightning   6 Memory School
     &3The mage calls down single lightning bolt.
@@ -155,7 +152,6 @@ windwalk:
   spell-icon: diamond-boots
   xp-granted:
     - apprentice 1
-    - novice 1
   cost:
     - mana 40
     - feather 2
@@ -167,18 +163,18 @@ windwalk:
   quest-triggers:
     - fly
   quest-modifiers:
-    - magicxpabove novice:4000 required
+    - magicxpabove novice:400 required
     - outside required
     - storm required
   fly-speed: 0.3
   launch-speed: 5
   use-cost-interval: 5
   modifiers:
-    - MagicXpAbove novice:4000 required
+    - MagicXpAbove novice:400 required
     - storm required
     - outside required
     - holding stormhammer power 2
-  str-modifier-failed: "You need 4000 Novice MagicXP to cast this spell. Do /magicxp"
+  str-modifier-failed: "You need 400 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: 40 mana and two feathers initially; 20 mana and a feather every 5 seconds thereafter.
   str-cast-self: You rise up into the stormy sky!
   str-cast-others: "%a rises up into the stormy sky!"
@@ -194,12 +190,11 @@ enderchest:
   spell-icon: ender_chest
   xp-granted:
     - apprentice 1
-    - novice 1
   memory: 4
   quest:
         - variable meta_statistic_use_item_ENDERCHEST 
   quest-modifiers:
-    - magicxpabove novice:4000 required
+    - magicxpabove novice:400 required
   cost:
     - mana 40
     - enderpearl 1
@@ -207,7 +202,7 @@ enderchest:
     - MagicXpAbove novice:4000 required
   str-modifier-failed: "You need 4000 Novice MagicXP to cast this spell. Do /magicxp"
   cooldown: 300
-  str-cost: "50 mana and an enderpearl."
+  str-cost: "40 mana and an enderpearl."
   description: |
     &rEnderchest: 4 Memory Spell
     &3Opens your ender chest inventory.

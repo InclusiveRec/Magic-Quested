@@ -10,17 +10,17 @@ bloom:
     - novice 1
   memory: 3
   quest:
-    - variable meta-statistic-use-item-wheat-seeds 300
+    - variable meta-statistic-use-item-wheat-seeds 30
   cost:
     - mana 30
-    - wheat-seeds 30
+    - wheat-seeds 3
   cooldown: 30
   growth: 2
   radius: 16
   modifiers:
     - Outside continue
     - Day power 1.5
-  str-cost: "30 mana and 30 seeds."
+  str-cost: "30 mana and 3 seeds."
   str-on-cooldown: "patience child, patience"
   description:
     - "Greatly accelerates crop growth."
@@ -40,7 +40,7 @@ forage:
     - novice 1
   cost:
     - mana 30
-    - wheat-seeds 30
+    - wheat-seeds 3
   cooldown: 0.5
   memory: 3
   quest:
@@ -65,7 +65,7 @@ forage:
     - Holding forest-sickle power 2.5
     - Biome FOREST,PLAINS,BIRCH-FOREST,BIRCH-FOREST-HILLS,JUNGLE-HILLS,JUNGLE-EDGE required
     - ElevationAbove 62 required
-  str-cost: "30 mana and 30 seeds."
+  str-cost: "30 mana and 3 seeds."
   str-modifier-failed: "This is not good foraging terrain."
   str-on-cooldown: "Rummage..."
   description: |
@@ -178,16 +178,16 @@ lifewalk:
     - novice 1
   cost:
     - mana 20
-    - wheat-seeds 20
+    - wheat-seeds 2
   memory: 2
   quest:
-    - variable meta-statistic-use-item-oak-sapling 200
+    - variable meta-statistic-use-item-oak-sapling 20
   bindable: false
   use-cost:
     - mana 2
     - wheat-seeds 2
   use-cost-interval: 10
-  str-cost: "20 mana and 20 wheat seeds, plus 2 mana and 2 wheat seeds every 10 steps."
+  str-cost: "20 mana and 2 wheat seeds, plus 2 mana and 2 wheat seeds every 10 steps."
   str-cast-self: "Flowers spring up in your footsteps."
   str-fade: "Your steps no longer cause flowers to grow."
   description: |
@@ -204,13 +204,13 @@ mark:
   xp-granted:
     - novice 1
   cost:
-    - mana 75
-    - redstone 5
-    - iron-ingot 5
+    - mana 30
+    - redstone 3
+    - iron-ingot 3
   memory: 3
   quest:
     - variable meta-statistic-sleep-in-bed 1
-  str-cost: 75 mana, 5 redstone dust and 5 iron bars
+  str-cost: 30 mana, 3 redstone dust and 3 iron bars
   str-cast-self: You have marked your location.
   description: |
     &2Mark:  3 Memory spell
@@ -246,4 +246,4 @@ recall:
   str-too-far: "Your bed is too far away."
   description: |
     &2Recall:  3 Memory spell
-    "Teleports you to the last bed you slept in."
+    "Teleports you to your mark."

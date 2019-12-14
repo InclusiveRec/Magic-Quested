@@ -154,14 +154,14 @@ bone-carving:
   quest:
     - variable meta-statistic-kill-entity-husk 5
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
   require-cast-item-on-command: true
   bindable: false
   items:
     - death-wand 1
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cast-self: "The wand grows eerily cold to the touch.  The work is done."
   str-cost: "A bone, five rotten flesh, and five levels."
   cast-time: 240 # server ticks; 12 seconds
@@ -192,12 +192,12 @@ dowsing-rod:
   quest:
     - #TODO Connie
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
   items:
     - water-rod
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 levels, 5 prismarine crystals, and a stick."
 
 dragon-compass:
@@ -214,14 +214,14 @@ dragon-compass:
   quest-triggers:
     - craft compass
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
     - biome the-end required
   require-cast-item-on-command: true
   items:
     - dragon-sphere 1
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 levels and a compass."
   description: |
     &2Scaled Compass: 5 Memory Spell.
@@ -243,15 +243,15 @@ fiery-staff:
   quest-triggers:
     - kill blaze
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
   add-to-inventory: false
   require-cast-item-on-command: true
   bindable: false
   items:
     - fire-staff 1
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cast-self: "You create a fiery staff."
   str-cost: "A blaze rod and 5 levels."
   description: |
@@ -273,15 +273,15 @@ gardener:
   quest-triggers:
     - craft shears
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
     - biome forest required
   require-cast-item-on-command: true
   bindable: false
   items:
     - forest-sickle
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 levels and a pair of shears"
   description: |
     &2Woodland Gardener: 5 Memory Spell
@@ -309,12 +309,12 @@ hydro-focus:
   quest:
     - #TODO Connie
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
   items:
     - water-focus
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 levels and 5 prismarine crystals."
   description: |
     &1Hydromantic Focus: 5 Memory Water Spell
@@ -334,14 +334,14 @@ hunting-knife: #Connie probably a weapon spell that will need to be moved
   quest-triggers:
     - craft iron-sword
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
     - biome forest required
   require-cast-item-on-command: true
   items:
     - forest-sword 1
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 levels and an iron sword."
   description: |
     &2Hunting Knife: 5 Memory Spell.
@@ -364,12 +364,12 @@ magic-pickaxe:
   quest-triggers:
     - craft iron-pickaxe
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
   items:
     - minepick
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "10 levels and an iron pick."
   description: |
     &8Magic Pickaxe: 5 Memory Spell
@@ -391,15 +391,15 @@ masons-trowel:
   quest-triggers:
     - craft iron-shovel
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
   items:
     - iron-trowel 1
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 experience levels and an iron shovel."
   description: |
-    &rTrowel   2 Memory Spell
+    &rTrowel   5 Memory Spell
     &3Crafts an iron trowel.
 
 solar-staff:
@@ -420,12 +420,12 @@ solar-staff:
     - gold-ingot 1
   quest-consume: false
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
   items:
     - sun-staff 1
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cast-self: "With a flash, the gold shapes itself into a shining golden staff."
   str-cost: "50 mana, a gold ingot, 5 levels, and 5 sticks."
   description: |
@@ -454,14 +454,14 @@ stormrod:
     - levels 5
   memory: 5
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
     - outside required
     - storm required
   items:
     - stormhammer 1
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cast-self: "You create a stormhammer."
   str-cost: "3 diamonds, 5 levels, 50 mana, and 2 sticks."
   description: |
@@ -483,7 +483,7 @@ woodland-wand:
   quest-triggers:
     - blockbreak oak-leaves
   quest-modifiers:
-    - magicxpabove novice:5000 required
+    - magicxpabove novice:500 required
     - holding shears required
     - biome required required
   require-cast-item-on-command: true
@@ -491,8 +491,8 @@ woodland-wand:
   items:
     - forest-wand
   modifiers:
-    - magicxpabove novice:5000 required
-  str-modifier-failed: "You need 5000 Novice MagicXP to cast this spell. Do /magicxp"
+    - magicxpabove novice:500 required
+  str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 levels and an oak sapling."
   description: |
     &2Oak wand: 5 Memory Spell.

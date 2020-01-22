@@ -24,8 +24,8 @@ ORGANISATIONAL TASKS:
 DESIGN TASKS:
 - Technology tree
     - Novice level spells have a memory cost of 3 or less, have no MagicXP requirements, and can be cast with a stick.
-    - Apprentice level spells have a memory cost of 4-7, have a Novice MagicXP requirement of 1000x the memory cost, and can be cast with either specific cast items or a stick.
-    - Master level spells have a memory cost of 7 and up, have requirements of Apprentice MagicXP 1000x the memory cost PLUS Novice MagicXP 10,000x the memory cost.
+    - Apprentice level spells have a memory cost of 4-7, have a Novice MagicXP requirement of 100x the memory cost, and can be cast with either specific cast items or a stick.
+    - Master level spells have a memory cost of 7 and up, have requirements of Apprentice MagicXP 100x the memory cost.
     - Cast item creation spells are Apprentice level, must be cast with a grimoire, and are not bindable.
     - Grimoires should be thematic with appropriate item creation spells tied to them
 - Spell effects

@@ -190,7 +190,7 @@ dowsing-rod:
   bindable: false
   memory: 5
   quest:
-    - #TODO Connie
+    - water-bucket 1
   quest-modifiers:
     - magicxpabove novice:500 required
   items:
@@ -199,6 +199,9 @@ dowsing-rod:
     - magicxpabove novice:500 required
   str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 levels, 5 prismarine crystals, and a stick."
+  description: |
+    &1Dowsing Rod: 5 Memory Water Spell
+    Create a hydromantic focus to direct water spells.
 
 dragon-compass:
   permission-name: apprentice
@@ -293,7 +296,7 @@ gardener:
       effect: sound
       sound: ambient.cave.1
 
-hydro-focus:
+hydro-focus: #How is this wand different than dowsing rod?
   permission-name: apprentice
   spell-class: ".instant.ConjureSpell"
   cast-item: hydro-grimoire
@@ -316,9 +319,6 @@ hydro-focus:
     - magicxpabove novice:500 required
   str-modifier-failed: "You need 500 Novice MagicXP to cast this spell. Do /magicxp"
   str-cost: "5 levels and 5 prismarine crystals."
-  description: |
-    &1Hydromantic Focus: 5 Memory Water Spell
-    Create a hydromantic focus to direct water spells.
 
 hunting-knife: #Connie probably a weapon spell that will need to be moved
   permission-name: apprentice
